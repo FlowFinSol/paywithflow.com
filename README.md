@@ -1,6 +1,6 @@
 # paywithflow.com
 https://paywithflow.com
-The Offical Flow App Website
+The Offical Zogo App Website
 
 ###### Install Dependencies:
 - Install Gulp: sudo npm install gulp-cli -g
