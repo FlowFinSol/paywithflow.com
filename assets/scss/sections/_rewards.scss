@@ -1,16 +1,162 @@
 .rewards {
   position: relative;
   overflow: hidden;
-  .box {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: -4em;
-  }
   .decor {
     width: 100%;
     position: absolute;
     bottom: 0;
+    z-index: 0;
+  }
+
+  .rewards-1 {
     z-index: -1;
+margin-bottom: -350px;
+    .phone {
+      z-index: -1;
+    }
+  }
+
+  .rewards-2 {
+    .list-rewards {
+      background-color: #f2f2f2;
+      padding-top: 80px;
+      padding-bottom: 100px;
+
+      h2 {
+        text-align: center;
+        padding-bottom: 20px;
+      }
+
+      h2 span {
+        color: #05babd;
+      }
+
+      .restaurant-foodtruck {
+        .restaurant-active {
+          font-weight: bold;
+          color: #05babd;
+        }
+
+        .name-restaurant:hover {
+          font-weight: bold;
+          color: #05babd;
+        }
+        // .img-home{
+        // border-radius: 10px 10px 10px 10px;
+        // }
+        .slide-restaurant-foodtruck {
+          background-color: #fff;
+          position: relative;
+          margin: auto;
+          padding: 30px 60px 20px 60px;
+          margin-bottom: 30px;
+          .owl-nav {
+            display: flex;
+            justify-content: space-between;
+
+            .owl-prev {
+              top: 20%;
+              padding: 0 20px;
+              position: absolute;
+              left: -15px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 6px;
+              background-color: rgb(125, 196, 197);
+              box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+              width: 50px;
+              height: 50px;
+              &:hover {
+                background-color: #5fcccf;
+              }
+            }
+            .owl-next {
+              position: absolute;
+              top: 20%;
+              right: -15px;
+              padding: 0 20px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 6px;
+              background-color: rgb(125, 196, 197);
+              box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+              width: 50px;
+              height: 50px;
+              &:hover {
+                background-color: #5fcccf;
+              }
+            }
+          }
+        }
+
+        .img-reward {
+          padding-bottom: 20px;
+          .img-home{
+            margin-bottom: 10px;
+          }
+        }
+
+        .img-item {
+          margin-left: 20px;
+          margin-right: 20px;
+        }
+
+        .homepage {
+          color: #5fcccf;
+          border-radius: 50px;
+          border: 1px solid #5fcccf;
+          padding: 4px 16px;
+          font-size: 17px;
+          text-decoration: none;
+          &:hover {
+            color: #fff;
+            background-color: #5fcccf;
+          }
+        }
+        .comming-soon {
+          a{
+            pointer-events: none;
+            cursor: default;
+          }
+          .homepage {
+            color: #595959;
+            border: 1px solid #595959;
+            &:hover {
+              color: #595959 !important;
+              border: 1px solid #595959 !important;
+              background: none;
+            }
+          }
+          .name-restaurant:hover{
+            color: #595959;
+          }
+          .img-comming-soon {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 25%;
+          }
+        }
+      }
+    }
+    .add-bottom {
+      height: 120px;
+    }
+    .map-restaurant-foodtruck {
+      background: #fff;
+      padding: 20px;
+      #map-canvas {
+        width: 100%;
+        height: 400px;
+      }
+    }
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -4em;
   }
   .text {
     margin: auto 0;
@@ -20,9 +166,11 @@
     margin-right: auto;
     padding: 1em 0;
     text-align: left;
+
     p {
       text-align: center;
     }
+
     .title {
       display: flex;
       border-bottom: 1px solid #e5e5e5;
@@ -30,37 +178,52 @@
       margin-bottom: 1em;
       text-align: center;
       justify-content: center;
+
       .title-icon {
         margin-right: 1em;
         display: flex;
         justify-content: space-around;
         flex-direction: column;
+
         img {
           height: 120px;
         }
       }
+
       h2 {
         margin-top: auto;
         margin-bottom: auto;
       }
     }
   }
+
   [data-aos="long-fade-up"] {
     transform: translateY(500px);
     opacity: 0;
     transition-property: transform, opacity;
+
     &.aos-animate {
       transform: translateY(0);
       opacity: 1;
     }
   }
-
   @include breakpoint($bs-xx) {
     .text .title .title-icon img {
       height: 100px;
     }
+
+    .owl-nav {
+      display: none;
+    }
   }
   @include breakpoint($bs-md) {
+    .owl-nav {
+      display: none !important;
+    }
+
+    .slide-restaurant-foodtruck {
+      padding: 5px !important;
+    }
     .decor {
       display: none;
     }
@@ -73,9 +236,15 @@
           margin-right: 0;
           align-items: center;
           flex-direction: unset;
-          margin-bottom: .5em;
+          margin-bottom: 0.5em;
         }
       }
+
     }
   }
+    @include breakpoint($bs-lg) {
+      .add-bottom {
+        display: none !important;
+      }
+    }
 }

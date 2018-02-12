@@ -5,7 +5,7 @@ gtag('js', new Date());
 gtag('config', 'UA-111501789-1');
 
 $(document).ready(function(){
-  $('.owl-carousel').owlCarousel({
+  $('div.owl-carousel.screen').owlCarousel({
     items: 1,
     dots: false,
     autoplay: true,
@@ -13,7 +13,25 @@ $(document).ready(function(){
     loop: true
   });
 });
-
+$(document).ready(function(){
+  $('div#demo.owl-carousel.owl-demo.slide-restaurant-foodtruck').owlCarousel({
+    loop:true,
+   margin:10,
+   nav:true,
+  navText: ["<img src='assets/img/icon/arrow_back@2x.png'>","<img src='assets/img/icon/arrow_next@2x.png'>"],
+   responsive:{
+       0:{
+           items:1
+       },
+       767:{
+           items:3
+       },
+       1000:{
+           items:4
+       }
+   }
+  });
+});
 // Web Complete Loaded
 $(window).on('load', function(e) {
   setTimeout(function(){
