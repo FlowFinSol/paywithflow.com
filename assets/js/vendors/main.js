@@ -16,15 +16,18 @@ $(document).ready(function(){
 $(document).ready(function(){
   $('div#demo.owl-carousel.owl-demo.slide-restaurant-foodtruck').owlCarousel({
     loop:true,
-   margin:10,
-   nav:true,
-  navText: ["<img src='assets/img/icon/arrow_back@2x.png'>","<img src='assets/img/icon/arrow_next@2x.png'>"],
-   responsive:{
+    margin:10,
+    nav:true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    lazyLoad: true,
+    navText: ["<img src='assets/img/icon/arrow_back@2x.png'>","<img src='assets/img/icon/arrow_next@2x.png'>"],
+    responsive:{
        0:{
            items:1
        },
-       767:{
-           items:3
+       422:{
+           items:2
        },
        1000:{
            items:4
@@ -140,4 +143,98 @@ $(document).on('submit', '#mc-embedded-subscribe-form', function (event) {
     event.preventDefault();
     register($form);
   } catch (error) { console.log(error); }
+});
+function myMap(LatLng) {
+  var mapProp= {
+      center:new google.maps.LatLng(38.937608,-76.9930334),
+      zoom:16,
+  };
+
+  switch (LatLng) {
+    case 0:
+        var mapProp= {
+            center:new google.maps.LatLng(38.937608,-76.9930334),
+            zoom:16,
+        };
+        break;
+    case 1:
+        var mapProp= {
+            center:new google.maps.LatLng(38.9248479,-76.9923427),
+            zoom:16,
+        };
+        break;
+    case 2:
+        var mapProp= {
+            center:new google.maps.LatLng(38.9332235,-76.993434),
+            zoom:16,
+        };
+        break;
+    case 3:
+        var mapProp= {
+            center:new google.maps.LatLng(38.9307911,-76.9928491),
+            zoom:16,
+        };
+        break;
+    case 4:
+        var mapProp= {
+            center:new google.maps.LatLng(38.931396, -77.038096),
+            zoom:16,
+        };
+        break;
+    case 5:
+        var mapProp= {
+            center:new google.maps.LatLng(38.908084, -77.040615),
+            zoom:16,
+        };
+        break;
+    case  6:
+        var mapProp= {
+            center:new google.maps.LatLng(38.8997572, -77.0272501),
+            zoom:16,
+        };
+        break;
+    case  7:
+        var mapProp= {
+            center:new google.maps.LatLng(38.862917, -76.970082),
+            zoom:16,
+        };
+        break;
+    case  8:
+        var mapProp= {
+            center:new google.maps.LatLng(38.9246246,-76.9923205),
+            zoom:16,
+        };
+        break;
+    case  9:
+        var mapProp= {
+            center:new google.maps.LatLng(38.9332427,-76.9928941),
+            zoom:16,
+        };
+        break;
+    case  10:
+        var mapProp= {
+            center:new google.maps.LatLng(38.9123443,-77.0194173),
+            zoom:16,
+        };
+        break;
+    case  11:
+        var mapProp= {
+            center:new google.maps.LatLng(38.919115, -77.036353),
+            zoom:16,
+        };
+        break;
+  }
+
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+  var marker = new google.maps.Marker({
+    position: map.getCenter(),
+    map: map
+  });
+}
+
+// active slide
+$('.img-reward').click(function(){
+  $('.img-reward').removeClass('active-slide-maps');
+  $(this).addClass('active-slide-maps');
 });
