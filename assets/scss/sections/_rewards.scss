@@ -1,6 +1,7 @@
 .rewards {
   position: relative;
   overflow: hidden;
+
   .decor {
     width: 100%;
     position: absolute;
@@ -44,6 +45,7 @@
           margin: auto;
           padding: 30px 60px 20px;
           margin-bottom: 30px;
+
           .owl-nav {
             display: flex;
             justify-content: space-between;
@@ -67,6 +69,7 @@
                 background-color: #5fcccf;
               }
             }
+
             .owl-next {
               position: absolute;
               top: 70px;
@@ -134,20 +137,24 @@
         }
       }
     }
+
     .add-bottom {
       height: 120px;
     }
+
     .map-restaurant-foodtruck {
       background: #fff;
       padding: 20px;
       margin-bottom: 120px;
     }
   }
+
   .box {
     display: flex;
     flex-direction: column;
     margin-bottom: -4em;
   }
+
   .text {
     margin: auto 0;
     text-align: center;
@@ -202,14 +209,18 @@
     .slide-restaurant-foodtruck {
       padding: 5px !important;
     }
+
     .decor {
       display: none;
     }
+
     .text {
       padding-bottom: 2em;
       text-align: center;
+
       .title {
         flex-direction: column;
+
         .title-icon {
           margin-right: 0;
           align-items: center;
@@ -217,8 +228,6 @@
           margin-bottom: 0.5em;
         }
       }
-    }
-    .list-rewards {
     }
   }
   @include breakpoint($bs-lg) {
