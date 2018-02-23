@@ -64,7 +64,7 @@ $('#contact-form').submit(function(event) {
 
     $.ajax({
       type: "POST",
-      url: "https://paywithflow.pw/paywithflow-website/contact",
+      url: "https://app.paywithflow.com/paywithflow-website/contact",
       contentType: "application/json; charset=utf-8",
       dataType: "json",
       data: JSON.stringify(formdata),
