@@ -15,8 +15,7 @@ gulp.task('serve', ['sass'], function() {
       notify: false
   });
   gulp.watch(path + "/assets/scss/*.scss", ['sass']);
-  gulp.watch(path + "/assets/scss/sections/*.scss", ['sass']);
-  gulp.watch(path + "/assets/scss/components/*.scss", ['sass']);
+  gulp.watch(path + "/assets/scss/business/*.scss", ['sass']);
   // gulp.watch(path + "/assets/js/vendors/*.js", ['concat']);
   gulp.watch(path + "/*.html").on('change', browserSync.reload);
   gulp.watch(path + "/assets/js/vendors/*.js").on('change', browserSync.reload);

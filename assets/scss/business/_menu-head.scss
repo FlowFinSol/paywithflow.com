@@ -1,0 +1,24 @@
+.menu-head {
+  display: flex;
+  padding-top: 17px;
+  justify-content: space-between;
+  .logo-menu-head {
+    img {
+      width: 106px;
+    }
+  }
+  .content-menu-head {
+    display: flex;
+    font-size: 15px;
+    p:nth-child(2) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+  .log-in-log-out {
+    a:last-child {
+      padding: 7px 30px;
+      background-color: #2eb9bb;
+    }
+  }
+}

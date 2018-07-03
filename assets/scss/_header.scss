@@ -4,7 +4,7 @@ nav {
   right: 0;
   z-index: 1000;
   .top-bar {
-    padding: 0 5%;
+    // padding: 0 5%;
     display: flex;
     left: 0;
     right: 0;
@@ -15,7 +15,7 @@ nav {
       display: flex;
       .logo {
         img {
-          width: 170px;
+          width: 107px;
         }
       }
       .expand-button {
@@ -33,6 +33,7 @@ nav {
       display: flex;
       height: fit-content;
       margin: auto 0;
+      padding-left: 100px;
       a {
         color: white;
         margin: .1em .6em;
@@ -54,6 +55,9 @@ nav {
       .login {
         border: 2px solid rgba(255, 255, 255, 0.6);;
       }
+    }
+    .log-in-log-out {
+      margin: auto 0;
     }
   }
   @include breakpoint($bs-xx){
