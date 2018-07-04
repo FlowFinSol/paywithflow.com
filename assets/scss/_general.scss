@@ -3,21 +3,21 @@ body {
   color: #6c707a;
   font-size: 16px;
   h1 {
-    font-size: 49px;
+    font-size: 48px;
     line-height: 56px;
   }
   h2 {
-    font-size: 42px
+    font-size: 46px
   }
   h3 {
-    font-size: 38
+    font-size: 38px
   }
   h4 {
     font-size: 32px;
     line-height: 40px;
   }
   h5 {
-    font-size: 26px
+    font-size: 24px
   }
   h6 {
     font-size: 20px;
@@ -49,7 +49,7 @@ body {
   padding-bottom: 17px;
   h3 {
     color: #4c5162;
-    padding-top: 25px;
+    padding-top: 15px;
   }
   .line {
     height: 1px;
@@ -61,6 +61,7 @@ body {
   }
   .margin40 {
     margin-bottom: 32px;
+    font-size: 14px;
   }
   .bor {
     border-radius: 12px;
@@ -87,16 +88,62 @@ body {
       font-size: 15px;
       color: #6c707a;
     }
-    select {
-      margin-left: 50px;
+    .dropdown {
+      margin-left: 60px;
+      margin-top: -9px;
+      font-size: 14px;
+      &:focus {
+        outline: none;
+      }
+      .dropdown-toggle {
+        width: 215px;
+        height: 32px;
+        background: #fdfdfd;
+        border-color: #e1e1e1;
+        border-radius: 4px;
+        color: #6c707a;
+        padding-top: 5px;
+        &:focus {
+          outline: none;
+        }
+      }
+      .dropdown-menu {
+        width: 215px;
+        text-align: center;
+      }
+      i {
+        padding-right: 15px;
+        font-size: 14px;
+        color: #2eb9bb;
+      }
     }
   }
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100
 }
 
 .line-page {
   height: 1px;
   background-color: #e1e1e1;
   margin: 120px 0;
+}
+
+.a-button {
+  font-family: 'MetropolisMedium', sans-serif;
+  font-size: 15px;
+  border-radius: 4px;
+  background-color: #2eb9bb;
+  padding: 10px 40px;
+  color: white;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .container-1240 {

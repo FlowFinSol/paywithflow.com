@@ -1,70 +1,74 @@
-.head-food-truck {
-  background-image: linear-gradient(rgba(5,14,22,0.7), rgba(5,14,22,0.7)),url(../img-business/food-truck/ftruck-bg@3x.jpg);
+.head-coffee {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img-business/coffee/coffeeShop-bg@3x.jpg);
   background-size: cover;
   background-position-x: center;
   color: white;
   .content-head-food-truck {
     padding-top: 240px;
-    padding-bottom: 140px;
+    padding-bottom: 25px;
     h1 {
       margin-bottom: 24px;
+      padding-right: 50px;
     }
-    h6 {
-      padding-right: 55px;
+    h3 {
+      font-family: 'MetropolisSemiBold', sans-serif;
     }
   }
 }
 
-.content-food-truck {
+.content-coffee {
   padding-top: 120px;
-  font-family: 'MetropolisRegular', sans-serif;
   color: #343a4b;
+  p, h4 {
+    font-family: 'MetropolisRegular', sans-serif;
+  }
+  h2 {
+    font-family: 'MetropolisExtraLight', sans-serif;
+    padding-bottom: 80px;
+    u:first-child {
+      color: #9498a6;
+      padding-right: 15px;
+    }
+    u:last-child {
+      color: #2eb9bb;
+    }
+  }
   img {
     height: 100%;
     width: 100%;
     border-radius: 4px;
   }
   .order-ahead {
-    h4 {
-      padding-bottom: 10px;
-    }
-  }
-  .location-based {
     text-align: center;
-    h4 {
-      padding-bottom: 24px;
+    .point {
+      position: absolute;
+      transform: translate(-97px,-180px);
+      height: 70px;
+    }
+    .height60 {
+      margin-bottom: 27px;
+      height: 62%;
     }
   }
+
   .tablet-printer {
-    .img-50 {
-      height: 55%;
-      margin-bottom: 40px;
-    }
-    h4 {
-      padding-bottom: 8px;
-    }
+    text-align: center;
     p {
-      padding-bottom: 8px;
+      padding: 5px 125px 24px ;
     }
   }
   .offer-reward {
-    h4 {
-      padding-bottom: 8px;
+    h2 {
+      text-align: center;
     }
-    .check {
-      display: flex;
-      padding-bottom: 10px;
-      i {
-        padding-right: 14px;
-        font-size: 12px;
-        color: white;
-        margin-top: 7px;
-      }
-      .fa-check:before {
-        background: linear-gradient(to top, #2f90d0, #39dfe2);
-        padding: 4px;
-        border-radius: 50px;
-      }
+    .point {
+      position: absolute;
+      transform: translate(-97px,-180px);
+      height: 70px;
+    }
+    .height60 {
+      margin-bottom: 27px;
+      height: 62%;
     }
   }
   .price {

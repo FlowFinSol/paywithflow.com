@@ -1,0 +1,42 @@
+.footer {
+  background-color: #3d3d3d;
+  padding-top: 65px;
+  padding-bottom: 15px;
+  color: #adadad;
+  .menu-footer {
+    h6 {
+      line-height: 24px;
+      padding-bottom: 16px;
+    }
+    a {
+      font-family: 'MetropolisRegular', sans-serif;
+      color: #d1d1d1;
+      line-height: 34px;
+      i {
+        padding-top: 5px;
+        padding-right: 24px;
+        font-size: 24px;
+        color: #838383;
+      }
+    }
+  }
+  hr {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background-color: #484848;
+  }
+  .privacy {
+    display: flex;
+    justify-content: space-between;
+    p {
+      font-family: 'MetropolisRegular', sans-serif;
+      color: #838383;
+    }
+    .policy {
+      display: flex;
+      p:last-child {
+        padding-left: 50px;
+      }
+    }
+  }
+}

@@ -1,7 +1,6 @@
-@import url('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css');
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css');
-@import url('https://fonts.googleapis.com/css?family=Asap:400,600|Work+Sans');
 @import url('https://use.fontawesome.com/releases/v5.1.0/css/all.css');
 
 @font-face {
@@ -14,8 +13,19 @@
    src: url(../font/metropolis/Metropolis-Regular.woff2);
 }
 
+@font-face {
+   font-family: MetropolisSemiBold;
+   src: url(../font/metropolis/Metropolis-SemiBold.woff2);
+}
+
+@font-face {
+   font-family: MetropolisExtraLight;
+   src: url(../font/metropolis/Metropolis-ExtraLight.woff2);
+}
+
 @import "variables";
 @import "mixin";
 @import "general";
 @import "header";
+@import "footer";
 @import "./business/index";
