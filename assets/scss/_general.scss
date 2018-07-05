@@ -109,7 +109,12 @@ body {
       }
       .dropdown-menu {
         width: 215px;
-        text-align: center;
+        text-align: left;
+        padding-top: 10px;
+        .dropdown-item {
+          padding-left: 10px;
+          padding-bottom: 10px;
+        }
       }
       i {
         padding-right: 15px;

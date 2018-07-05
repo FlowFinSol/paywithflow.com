@@ -1,4 +1,8 @@
 
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
+});
+
 
 $(window).scroll(function(){
   var wScroll = $(this).scrollTop()

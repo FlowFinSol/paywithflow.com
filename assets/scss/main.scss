@@ -23,6 +23,16 @@
    src: url(../font/metropolis/Metropolis-ExtraLight.woff2);
 }
 
+@font-face {
+   font-family: MetropolisBold;
+   src: url(../font/metropolis/Metropolis-Bold.woff2);
+}
+
+@font-face {
+   font-family: MetropolisLightItalic;
+   src: url(../font/metropolis/Metropolis-LightItalic.woff2);
+}
+
 @import "variables";
 @import "mixin";
 @import "general";
