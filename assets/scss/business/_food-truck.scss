@@ -6,11 +6,72 @@
   .content-head-food-truck {
     padding-top: 240px;
     padding-bottom: 140px;
+    .col-8 {
+      padding-right: 0;
+    }
+    .col-4 {
+      padding-left: 120px;
+    }
     h1 {
       margin-bottom: 24px;
     }
-    h6 {
-      padding-right: 55px;
+  }
+  @include breakpoint($bs-lg){
+    .content-head-food-truck {
+      .col-4 {
+        padding-left: 50px;
+      }
+    }
+  }
+  @include breakpoint($bs-md){
+    .content-head-food-truck {
+      h1 {
+        font-size: 40px;
+        line-height: 48px;
+      }
+      .col-8 {
+        padding-right: 15px;
+      }
+      .col-4 {
+        padding-left: 0px;
+      }
+    }
+  }
+  @include breakpoint($bs-sm){
+    .content-head-food-truck {
+      text-align: center;
+      padding-bottom: 50px;
+      h1 {
+        margin-bottom: 5px;
+      }
+      .affordable-pricing {
+        transform: translateY(20px);
+        img {
+          width: 50%;
+          transform: translate(-158px, -30px);
+        }
+        .row {
+          margin-top: -35px;
+          .margin40 {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  @include breakpoint($bs-xs){
+    .content-head-food-truck {
+      .affordable-pricing {
+        img {
+          transform: translate(0, -18px);
+        }
+        .row {
+          margin-top: 0;
+          .margin40 {
+            margin-bottom: 32px;
+          }
+        }
+      }
     }
   }
 }
@@ -20,28 +81,26 @@
   font-family: 'MetropolisRegular', sans-serif;
   color: #343a4b;
   img {
-    height: 100%;
+    // height: 100%;
     width: 100%;
     border-radius: 4px;
   }
   .order-ahead {
     h4 {
-      padding-bottom: 10px;
+      margin-bottom: 16px;
+      margin-right: -3px;
     }
   }
   .location-based {
     text-align: center;
     h4 {
-      padding-bottom: 24px;
+      margin-bottom: 32px;
     }
   }
   .tablet-printer {
-    .img-50 {
-      height: 55%;
-      margin-bottom: 40px;
-    }
     h4 {
-      padding-bottom: 8px;
+      margin-top: 40px;
+      margin-bottom: 16px;
     }
     p {
       padding-bottom: 8px;
@@ -49,7 +108,7 @@
   }
   .offer-reward {
     h4 {
-      padding-bottom: 8px;
+      margin-bottom: 16px;
     }
     .check {
       display: flex;
@@ -80,9 +139,13 @@
     p {
       color: white;
     }
+    h3 {
+      font-size: 32px;
+    }
     img {
       position: absolute;
       margin-left: -80px;
+      height: 100%;
     }
     .transaction {
       background-color: white;
@@ -115,6 +178,80 @@
     p {
       padding-bottom: 22px;
     }
+
+  }
+  @include breakpoint($bs-lg){
+    .price {
+      .transaction {
+        margin: 50px 50px 50px 22px;
+        padding: 60px 40px;
+      }
+    }
+  }
+  @include breakpoint($bs-md){
+    .order-ahead {
+      text-align: center;
+      p {
+        margin-bottom: 30px;
+      }
+    }
+    .offer-reward {
+      .col-md-12:first-child {
+        order: 2
+      }
+      .col-md-12:last-child {
+        order: 1;
+        margin-bottom: 40px;
+      }
+    }
+    .price {
+      transform: translateY(160px);
+      margin-top: -50px;
+      padding-left: 45px;
+      h4 {
+        padding-top: 60px;
+      }
+      .transaction {
+        margin: 50px 50px 50px -45px;
+        padding: 60px 40px;
+      }
+    }
+    .start {
+      h4 {
+        padding-top: 25px;
+      }
+    }
+  }
+  @include breakpoint($bs-sm){
+    .tablet-printer {
+      text-align: center;
+      p:last-child {
+        margin-bottom: 32px;
+      }
+    }
+    .price {
+      text-align: center;
+      padding: 0 55px;
+      img {
+        margin-left: -255px;
+        height: 150%;
+        width: 118%;
+        margin-top: -106px;
+      }
+      .transaction {
+        margin: 40px 0 50px;
+        padding: 25px 115px;
+      }
+    }
+    .start {
+      text-align: center;
+      img {
+        width: 65%;
+        padding-bottom: 25px;
+      }
+    }
+  }
+  @include breakpoint($bs-xs){
 
   }
 }

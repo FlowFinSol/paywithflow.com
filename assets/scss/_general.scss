@@ -50,6 +50,7 @@ body {
   h3 {
     color: #4c5162;
     padding-top: 15px;
+    font-size: 32px;
   }
   .line {
     height: 1px;
@@ -69,9 +70,7 @@ body {
     background-image: linear-gradient(#ecf7ff, #e1f3ff), linear-gradient(to top, #2f90d0, #39dfe2);
     background-origin: border-box;
     background-clip: content-box, border-box;
-    margin-left: 34px;
-    margin-right: 34px;
-    margin-bottom: 6px;
+    margin: 0 34px 6px 34px;
     font-size: 14px;
     line-height: 24px;
     opacity: 0.8;
@@ -120,6 +119,20 @@ body {
         padding-right: 15px;
         font-size: 14px;
         color: #2eb9bb;
+      }
+    }
+  }
+  @include breakpoint($bs-md){
+    .content-menu {
+      justify-content: center;
+      a {
+        display: none;
+      }
+      .dropdown {
+        margin-left: 0px;
+        a {
+          display: block;
+        }
       }
     }
   }

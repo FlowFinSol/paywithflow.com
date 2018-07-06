@@ -34,9 +34,39 @@
     }
     .policy {
       display: flex;
-      p:last-child {
-        padding-left: 50px;
+      a:last-child {
+        p {
+          padding-left: 50px;
+        }
       }
+    }
+  }
+  @include breakpoint($bs-md){
+    .menu-footer {
+      .col-sm-6 {
+        margin-bottom: 40px;
+      }
+    }
+    hr {
+      margin-top: 10px;
+    }
+  }
+  @include breakpoint($bs-sm){
+    .privacy {
+      p{
+        order: 2;
+      }
+      flex-direction: column;
+      text-align: center;
+      .policy {
+        order: 1;
+        justify-content: center;
+      }
+    }
+  }
+  @include breakpoint($bs-xs){
+    .menu-footer {
+      text-align: center;
     }
   }
 }
