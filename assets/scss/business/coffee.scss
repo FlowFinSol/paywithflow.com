@@ -13,7 +13,19 @@
       font-family: 'MetropolisSemiBold', sans-serif;
     }
     .affordable-pricing {
-      margin-left: 110px;
+      // margin-left: 110px;
+    }
+  }
+  @include breakpoint($bs-md){
+    .content-head-food-truck {
+      h1 {
+        font-size: 40px;
+      }
+    }
+  }
+  @include breakpoint($bs-md){
+    h1 {
+      text-align: center;
     }
   }
 }
@@ -46,7 +58,9 @@
     border-radius: 4px;
   }
   .order-ahead {
-    text-align: center;
+    h2 {
+      text-align: center;
+    }
     .bgr-point {
       text-align: left;
       background-image: url("../img-business/coffee/illu 2@3x.jpg");
@@ -100,38 +114,40 @@
       margin-bottom: -95px;
     }
     .price {
-      background: linear-gradient(to right, #7aa9dc, #49c1c3);
+      background-image: linear-gradient(rgba(122, 169, 220, 1), rgba(73, 193, 195, 1)), url(../img-business/food-truck/decor1@3x.png);
+      background-size: cover;
+      background-position-x: center;
       border-radius: 8px;
       color: white;
-      padding-left: 65px;
+      padding: 65px 90px 65px 65px;
       transform: translateY(165px);
       p {
         color: white;
       }
-      img {
-        position: absolute;
-        margin-left: -80px;
-      }
       .left {
+        padding-top: 50px;
         h4 {
-          padding-top: 95px;
           padding-bottom: 8px;
         }
       }
-      .transaction {
-        background-color: white;
-        margin: 67px 92px;
-        border-radius: 8px;
-        padding: 42px 32px;
-        position: relative;
-        color: #6c707a;
-        text-align: center;
-        p {
+      .price-transaction {
+        display: flex;
+        justify-content: flex-end;
+        .transaction {
+          background-color: white;
+          margin: 5px 0px;
+          border-radius: 8px;
+          padding: 42px 32px;
+          position: relative;
           color: #6c707a;
-        }
-        .line {
-          height: 1px;
-          background-color: #5bcbcd;
+          text-align: center;
+          p {
+            color: #6c707a;
+          }
+          .line {
+            height: 1px;
+            background-color: #5bcbcd;
+          }
         }
       }
     }
@@ -141,8 +157,7 @@
     padding-top: 275px;
     padding-bottom: 126px;
     img {
-      width: 80%;
-      padding-left: 100px;
+      width: 70%;
     }
     h4 {
       padding-top: 100px;
@@ -152,5 +167,84 @@
       padding-bottom: 22px;
     }
 
+  }
+  @include breakpoint($bs-lg){
+    .prices {
+      .price {
+        padding: 65px 45px;
+      }
+    }
+    .start {
+      img {
+        width: 79%;
+      }
+    }
+  }
+  @include breakpoint($bs-md){
+    .order-ahead {
+      .height60 {
+        height: 35%;
+      }
+    }
+    .offer-reward {
+      img {
+        height: auto;
+      }
+      .height60 {
+        height: 44%;
+      }
+    }
+    .prices {
+      .price {
+        .left {
+          padding-top: 10px;
+        }
+      }
+    }
+    .start {
+      img {
+        width: 83%;
+        height: 96%;
+      }
+      h4 {
+        padding-top: 40px;
+      }
+    }
+  }
+  @include breakpoint($bs-sm){
+    .order-ahead {
+      .height60 {
+        height: 63%;
+      }
+      h4 {
+        margin-bottom: 30px;
+        text-align: center;
+      }
+    }
+    .tablet-printer {
+      p {
+        padding: 8px 0px 22px;
+      }
+    }
+    .offer-reward {
+      text-align: center;
+    }
+    .prices {
+      .price {
+        text-align: center;
+        .price-transaction {
+          margin-top: 60px;
+          // justify-content: center;
+          .transaction {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+          }
+        }
+      }
+    }
+    .start {
+      text-align: center;
+    }
   }
 }

@@ -45,7 +45,7 @@
         margin-bottom: 5px;
       }
       .affordable-pricing {
-        transform: translateY(20px);
+        transform: translateY(40px);
         img {
           width: 50%;
           transform: translate(-158px, -30px);
@@ -61,6 +61,7 @@
   }
   @include breakpoint($bs-xs){
     .content-head-food-truck {
+      padding-bottom: 70px;
       .affordable-pricing {
         img {
           transform: translate(0, -18px);
@@ -70,6 +71,14 @@
           .margin40 {
             margin-bottom: 32px;
           }
+        }
+        .line {
+          margin: 7px 175px;
+        }
+        .bor {
+          display: none;
+          // margin: 0 15px 6px 15px;
+          // max-width: 185px;
         }
       }
     }
@@ -252,6 +261,29 @@
     }
   }
   @include breakpoint($bs-xs){
-
+    .order-ahead {
+      .col-lg-4:first-child {
+        order: 2;
+        margin-top: 30px;
+      }
+      .col-lg-4:nth-child(2) {
+        order: 1;
+      }
+      .col-lg-4:nth-child(3) {
+        order: 3;
+      }
+    }
+    .price {
+      .transaction {
+        padding: 25px 0px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .line {
+          width: 175px;
+          margin-bottom: 10px;
+        }
+      }
+    }
   }
 }
