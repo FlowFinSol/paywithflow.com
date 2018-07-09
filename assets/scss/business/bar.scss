@@ -15,7 +15,7 @@
       font-size: 26px;
       line-height: 33px;
       border: 2px solid #33B3D8;
-      border-radius: 41px;
+      border-radius: 100px;
       margin-bottom: 50px;
       padding: 9px 50px;
     }
@@ -30,7 +30,7 @@
     }
     p {
       font-size: 17px;
-      border-radius: 23px;
+      border-radius: 50px;
       background-image: linear-gradient(to top, #008fbd, #00b8d2);
       padding: 12px 0px;
       color: white;
@@ -43,6 +43,67 @@
     img {
       width: 21%;
     }
+  }
+  @include breakpoint($bs-md){
+    .content-head-bar {
+      p {
+        padding: 12px 36px 12px 30px;
+        img {
+          width: 4%;
+          margin-right: 20px;
+          transform: translateY(10px);
+        }
+      }
+    }
+  }
+  @include breakpoint($bs-sm){
+    .content-head-bar {
+      h5 {
+        font-size: 22px;
+        padding: 9px 15px;
+        margin-bottom: 30px;
+      }
+      h5:nth-child(3) {
+        margin-bottom: 100px;
+      }
+      p {
+        padding: 12px 50px 12px 50px;
+        img {
+          width: 6%;
+          margin-right: -30px;
+          transform: translate(-45px,12px)
+        }
+      }
+    }
+  }
+  @include breakpoint($bs-xs){
+    .content-head-bar {
+      p {
+        padding: 12px 50px 12px 60px;
+        img {
+          width: 9%;
+          transform: translate(-50px, 25px)
+        }
+      }
+    }
+  }
+}
+
+.intergration {
+  p {
+    font-family: 'MetropolisSemiBold', sans-serif;
+    font-size: 18px;
+    padding: 7px;
+    right: 0;
+    top: 10px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    width: 247px;
+    height: 36px;
+    transform: rotate(2deg);
+    border-radius: 20px;
+    background-image: linear-gradient(to top, #2fa2d0, #39c2e2);
   }
 }
 
@@ -64,6 +125,7 @@
       margin-top: 16px;
       border-left: 4px solid #2eb9bb;
       padding-left: 26px;
+      margin-bottom: 30px;
       b {
         color: #343a4b;
       }
@@ -144,10 +206,7 @@
   }
 
   .prices {
-    // background-image: linear-gradient(#7aa9dc, #49c1c3),url(../img-business/food-truck/decor1@3x.png);
-    // //
     background: linear-gradient(to right, #7aa9dc, #49c1c3);
-    border-radius: 8px;
     color: white;
     .bgr-deco {
       background-image: url("../img-business/bar/decor @3x.png");
@@ -178,9 +237,13 @@
         p {
           color: #6c707a;
         }
-        .line {
-          height: 1px;
+        p:last-child{
+          margin-top: 10px;
+        }
+        hr {
+          width: 180px;
           background-color: #5bcbcd;
+          margin-top: 0;
         }
       }
     }
@@ -197,6 +260,64 @@
     p {
       margin-bottom: 30px;
     }
-
+  }
+  @include breakpoint($bs-lg){
+    .prices {
+      .bgr-deco {
+        background-size: 65%;
+      }
+    }
+  }
+  @include breakpoint($bs-md){
+    .experience {
+      .step {
+        p {
+          margin-bottom: 30px;
+        }
+      }
+      .change-experience {
+        .col-md-12:first-child {
+          order: 2
+        }
+        .col-md-12:last-child {
+          order: 1
+        }
+        p {
+          margin-bottom: 30px;
+        }
+        h5 {
+          margin-bottom: 40px;
+        }
+      }
+    }
+    .prices {
+      .bgr-deco {
+        padding-top: 85px;
+      }
+    }
+  }
+  @include breakpoint($bs-sm){
+    .tablet-printer {
+      p {
+        padding: 8px 5px 32px;
+      }
+    }
+    .prices {
+      .bgr-deco {
+        .left {
+          text-align: center;
+          p {
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+  @include breakpoint($bs-xs){
+    .experience {
+      h2 {
+        margin-bottom: 70px;
+      }
+    }
   }
 }

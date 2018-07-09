@@ -3,31 +3,6 @@
   background-size: cover;
   background-position-x: center;
   color: white;
-  .content-head-food-truck {
-    padding-top: 255px;
-    padding-bottom: 70px;
-    h1 {
-      margin-bottom: 24px;
-    }
-    h3 {
-      font-family: 'MetropolisSemiBold', sans-serif;
-    }
-    .affordable-pricing {
-      // margin-left: 110px;
-    }
-  }
-  @include breakpoint($bs-md){
-    .content-head-food-truck {
-      h1 {
-        font-size: 40px;
-      }
-    }
-  }
-  @include breakpoint($bs-md){
-    h1 {
-      text-align: center;
-    }
-  }
 }
 .popover {
   transform: translate3d(823px, 1195px, 0px)!important;
@@ -108,45 +83,51 @@
     }
   }
   .prices {
+    transform: translateY(160px);
+    margin-top: -160px;
     h2 {
       text-align: center;
-      padding-bottom: 0;
-      margin-bottom: -95px;
     }
-    .price {
-      background-image: linear-gradient(rgba(122, 169, 220, 1), rgba(73, 193, 195, 1)), url(../img-business/food-truck/decor1@3x.png);
-      background-size: cover;
-      background-position-x: center;
+    .bgr {
+      background-image: linear-gradient(to right, #7aa9dc, #49c1c3);
       border-radius: 8px;
-      color: white;
-      padding: 65px 90px 65px 65px;
-      transform: translateY(165px);
-      p {
-        color: white;
-      }
-      .left {
-        padding-top: 50px;
-        h4 {
-          padding-bottom: 8px;
-        }
-      }
-      .price-transaction {
-        display: flex;
-        justify-content: flex-end;
-        .transaction {
-          background-color: white;
-          margin: 5px 0px;
-          border-radius: 8px;
-          padding: 42px 32px;
-          position: relative;
-          color: #6c707a;
-          text-align: center;
+      .content {
+        background-image: url("../img-business/coffee/decor1@3x.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+        padding: 70px 90px 70px 60px;
+        .left {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          justify-content: center;
+          h4 {
+            color: white;
+            margin-bottom: 14px;
+          }
           p {
+            color: white;
+            margin-bottom: 0;
+          }
+        }
+        .transaction {
+          text-align: center;
+          background-color: white;
+          padding: 42px 32px;
+          border-radius: 8px;
+          h4 {
+            font-weight: 600;
             color: #6c707a;
+            font-family: 'Montserrat', sans-serif;
           }
           .line {
             height: 1px;
-            background-color: #5bcbcd;
+            background: #5bcbcd;
+            margin: 0px 5% 15px;
+          }
+          p {
+            font-size: 15px;
           }
         }
       }
@@ -166,12 +147,13 @@
     p {
       padding-bottom: 22px;
     }
-
   }
   @include breakpoint($bs-lg){
     .prices {
-      .price {
-        padding: 65px 45px;
+      .bgr {
+        .content {
+          padding: 70px 45px 70px 60px;
+        }
       }
     }
     .start {
@@ -195,9 +177,9 @@
       }
     }
     .prices {
-      .price {
-        .left {
-          padding-top: 10px;
+      .bgr {
+        .content {
+          padding: 70px 45px;
         }
       }
     }
@@ -213,6 +195,9 @@
   }
   @include breakpoint($bs-sm){
     .order-ahead {
+      .bgr-point {
+        margin-top: 45px;
+      }
       .height60 {
         height: 63%;
       }
@@ -230,15 +215,17 @@
       text-align: center;
     }
     .prices {
-      .price {
-        text-align: center;
-        .price-transaction {
-          margin-top: 60px;
-          // justify-content: center;
+      text-align: center;
+      .bgr {
+        .content {
+          padding: 70px 25px;
+          .left {
+            padding-bottom: 60px;
+          }
           .transaction {
-            display: flex;
-            width: 100%;
-            flex-direction: column;
+            .line {
+              margin: 0px 20% 15px;
+            }
           }
         }
       }
