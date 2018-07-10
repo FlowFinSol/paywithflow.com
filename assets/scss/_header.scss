@@ -1,3 +1,91 @@
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3000;
+  top: 0;
+  left: 0;
+  background-color: #2c2f2f;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  font-family: 'MetropolisMedium', sans-serif;
+  a, li {
+    padding: 8px 8px 32px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  ul {
+    background-color: #202222;
+    padding-top: 20px;
+    list-style-type: circle;
+    margin-bottom: 30px;
+    li {
+      font-family: 'MetropolisRegular', sans-serif;
+    }
+    a:before {
+      content: "•"; /* Insert content that looks like bullets */
+      padding-right: 15px;
+    }
+  }
+  .log-in-log-out {
+    font-size: 14px;
+    margin: 50px 35px 50px 0px;
+    display: flex;
+    font-family: 'MetropolisSemiBold', sans-serif;
+    justify-content: space-between;
+    a:first-child {
+      padding: 7px 30px 0 32px;
+      color: white;
+      min-width: 60px;
+      text-decoration: underline;
+      &:hover {
+        color: #2eb9bb;
+      }
+    }
+    a:last-child {
+      padding: 7px 30px;
+      color: #2eb9bb;
+      background-color: white;
+      border-radius: 4px;
+      &:hover {
+        color: white;
+        background-color: #2eb9bb;
+      }
+    }
+  }
+  .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+}
+
+.closebtn-overlay {
+  position: fixed;
+  background: rgba(0,0,0,0.4);
+  width: 0;
+  height: 100%;
+  overflow-x: hidden;
+  transition: 0.3s;
+  z-index: 1001;
+}
+
+.nav-link[data-toggle].collapsed:after {
+  content: "▾";
+  padding-left: 15px;
+}
+.nav-link[data-toggle]:not(.collapsed):after {
+  content: "▴";
+  padding-left: 15px;
+}
+
 nav {
   position: absolute;
   left: 0;
@@ -5,14 +93,12 @@ nav {
   z-index: 1000;
   border-bottom: 1px solid rgba(255,255,255,0.2);
   .top-bar {
-    // padding: 0 5%;
     display: flex;
     left: 0;
     right: 0;
     justify-content: space-between;
     .left-items {
-      padding: 1em 0 ;
-      justify-content: space-between;
+      padding: 1em 0;
       display: flex;
       .logo {
         img {
@@ -24,10 +110,11 @@ nav {
         border-radius: 3px;
         outline: none;
         border: none;
-        color: #62cdd1;
-        cursor: pointer;
+        color: white;
         display: none;
         font-size: 14px;
+        margin-right: 20px;
+        margin-top: 5px;
       }
     }
     .menu {
@@ -45,17 +132,12 @@ nav {
         &:hover {
           background: rgba(108, 109, 111, 0.8);
         }
-        // &.active {
-        //   background: rgba(204, 240, 244, 0.35);
-        //   &:hover {
-        //     color: white;
-        //   }
-        // }
       }
     }
     .log-in-log-out {
       font-size: 14px;
       margin: auto 0;
+      display: block;
       a:first-child {
         color: white;
         padding-right: 30px;
@@ -73,48 +155,25 @@ nav {
       }
     }
   }
-  @include breakpoint($bs-xx){
-    .top-bar {
-      .left-items {
-        .logo {
-
-        }
-      }
-      .menu {
-        a {
-        }
-      }
-    }
-  }
   @include breakpoint($bs-md){
     padding-bottom: .5em;
     background: transparent;
     .top-bar {
       padding: 0;
-      flex-direction: column;
       .left-items {
         .expand-button {
           display: block;
         }
       }
       .menu {
-        flex-direction: column;
         display: none;
       }
     }
-    &.is-expand {
-      background: #55b9cd;
-      box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
-      .top-bar {
-        .menu {
-          padding: 10px 0;
-          display: flex;
-          a {
-            font-weight: bold;
-            padding: 10px 20px;
-            margin: 5px 0;
-          }
-        }
+  }
+  @include breakpoint($bs-xs){
+    .top-bar {
+      .log-in-log-out {
+        display: none!important;
       }
     }
   }

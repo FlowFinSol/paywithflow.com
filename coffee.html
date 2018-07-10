@@ -10,24 +10,51 @@
 </head>
 
 <body>
+
+  <div id="mySidenav" class="sidenav">
+    <a id="id-closebtn" href="javascript:void(0)" class="closebtn">&times;</a>
+    <a href="#">Home</a>
+    <a href="#">Personal</a>
+    <a class="nav-link collapsed" href="#submenu1" data-toggle="collapse" data-target="#submenu1">Business</a>
+    <div class="collapse" id="submenu1" aria-expanded="false">
+      <ul class="flex-column pl-2 nav">
+        <li class="nav-item"><a class="nav-link py-0" href="#">Food truck owner</a></li>
+        <li class="nav-item"><a class="nav-link py-0" href="#">Coffee shop owner</a></li>
+        <li class="nav-item"><a class="nav-link py-0" href="#">Bar/ restaurant owner</a></li>
+      </ul>
+    </div>
+    <a href="#">What's Zogo</a>
+    <a href="#">Vision</a>
+    <a href="#">Contact</a>
+    <hr>
+    <div class="log-in-log-out">
+      <a href="#">LOG IN</a>
+      <a href="#">SIGN UP</a>
+    </div>
+  </div>
+  <div id="id-close" class="closebtn-overlay">
+
+  </div>
+<div id="main">
+
   <div id="header" class="head-coffee">
     <nav id="top-bar">
       <div class="container">
         <div class="top-bar">
           <div class="left-items">
+            <button class="expand-button" type="button" name="button">
+              <span id="openNav" style="font-size:20px;cursor:pointer">&#9776;</span>
+            </button>
             <a class="logo" href="">
               <img src="assets/img-business/icon/logo-colored.svg" alt="">
             </a>
-            <button class="expand-button" type="button" name="button">
-              <img src="" alt="">
-            </button>
           </div>
           <div class="menu">
             <a href="business.html">What's Zogo</a>
             <a class="pad-40" href="vision.html">Vision</a>
             <a href="contact.html">Contact</a>
           </div>
-          <div class="log-in-log-out">
+          <div id="log-in-out" class="log-in-log-out">
             <a href="#">LOG IN</a>
             <a class="a-button" href="#">SIGN UP</a>
           </div>
@@ -72,25 +99,24 @@
   <div id="menu-business" class="menu-business">
     <div class="container">
       <div class="content-menu">
-        <a href="">Order ahead</a>
-        <a href="">Location based</a>
-        <a href="">Tablet & Printer</a>
-        <a href="">Offers & Rewards</a>
-        <a href="">Affordable price</a>
+        <a href="#order-ahead">Order ahead</a>
+        <a href="#tablet-printer">Tablet & Printer</a>
+        <a href="#offer-reward">Offers & Rewards</a>
+        <a href="#prices">Affordable price</a>
         <div class="dropdown">
           <button class="dropdown-toggle" data-toggle="dropdown">
             <i class="fas fa-coffee"></i> Coffee shop owner
           </button>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="#"><i class="fas fa-truck"></i> Food truck owner</a>
-            <a class="dropdown-item" href="#">Food truck owner</a>
+            <a class="dropdown-item" href="food-truck.html"><i class="fas fa-truck"></i> Food truck owner</a>
+            <a class="dropdown-item" href="bar.html"><i class="fas fa-glass-martini"></i> Bar/ restaurant owner</a>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="content-coffee">
+  <div id="order-ahead" class="content-coffee">
     <div class="container">
       <div class="order-ahead">
         <h2><u>We understand your</u><u>burdens in rush-hours…</u></h2>
@@ -100,7 +126,8 @@
             <h4>Kill the line. Let your customers order their coffee or breakfast sammy before they arrive.</h4>
           </div>
           <div class="col-md-6 col-sm-12">
-            <div class="bgr-point">
+            <img src="assets/img-business/coffee/illu 2@3x.jpg" alt="">
+            <div class="point" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Content 123">
               <img src="assets/img-business/icon/blue point.svg">
             </div>
           </div>
@@ -110,19 +137,23 @@
       <div class="line-page">
       </div>
 
-      <div class="tablet-printer">
+      <div id="tablet-printer" class="tablet-printer">
         <h2><u>We make it</u><u>easy !</u></h2>
         <h4>Zogo comes with a tablet and cloud printer. </h4>
         <p>You can put the printer anywhere in your store. All it needs is an internet connection. No need to interact with tablet - orders print automatically. </p>
         <img src="assets/img-business/coffee/illu 3@3x.jpg" alt="">
-        <img class="point-1" src="assets/img-business/icon/green point.svg">
-        <img class="point-2" src="assets/img-business/icon/blue point.svg">
+        <div class="point" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Content 1111">
+          <img src="assets/img-business/icon/green point.svg">
+        </div>
+        <div class="point" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Content 2222">
+          <img src="assets/img-business/icon/blue point.svg">
+        </div>
       </div>
 
       <div class="line-page">
       </div>
 
-      <div class="offer-reward">
+      <div id="offer-reward" class="offer-reward">
         <h2><u>More ways to</u><u>take care of your customers</u></h2>
         <div class="row">
           <div class="col-md-8 col-sm-12">
@@ -139,7 +170,7 @@
       <div class="line-page">
       </div>
 
-      <div class="prices">
+      <div id="prices" class="prices">
         <h2><u>No -</u><u>It does not cost an arm and a leg</u></h2>
         <div class="bgr">
           <div class="content">
@@ -164,7 +195,7 @@
       </div>
     </div>
 
-    <div class="start">
+    <div id="start" class="start">
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-sm-12 center">
@@ -193,9 +224,9 @@
           </div>
           <div class="col-lg-3 col-sm-6">
             <h6>ZogoPay</h6>
-            <p><a href="#">Food truck</a></p>
-            <p><a href="#">Coffe shop</a></p>
-            <p><a href="#">Bar / Restaurant</a></p>
+            <p><a href="food-truck.html">Food truck</a></p>
+            <p><a href="coffee.html">Coffe shop</a></p>
+            <p><a href="bar.html">Bar / Restaurant</a></p>
           </div>
           <div class="col-lg-3 col-sm-6">
             <h6>About us</h6>
@@ -231,10 +262,8 @@
     <div class="back-to-top">
       <img src="assets/img/icon/up-arrow.png" alt="">
     </div>
+</div>
 
-<script>
-
-</script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>

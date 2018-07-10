@@ -3,85 +3,42 @@
   background-size: cover;
   background-position-x: center;
   color: white;
-  .content-head-food-truck {
-    padding-top: 240px;
-    padding-bottom: 140px;
-    .col-8 {
+  .content-head-ft-coff {
+    .col-md-8 {
       padding-right: 0;
-    }
-    .col-4 {
-      padding-left: 120px;
-    }
-    h1 {
-      margin-bottom: 24px;
+      p {
+        font-size: 20px;
+        color: white;
+        margin-top: 15px;
+        margin-bottom: 45px;
+        line-height: 32px;
+      }
     }
   }
   @include breakpoint($bs-lg){
-    .content-head-food-truck {
-      .col-4 {
-        padding-left: 50px;
-      }
-    }
+
   }
   @include breakpoint($bs-md){
-    .content-head-food-truck {
-      h1 {
-        font-size: 40px;
-        line-height: 48px;
-      }
-      .col-8 {
-        padding-right: 15px;
-      }
-      .col-4 {
-        padding-left: 0px;
+    .content-head-ft-coff {
+      .col-md-8 {
+        padding-right: 62px;
       }
     }
   }
   @include breakpoint($bs-sm){
-    .content-head-food-truck {
-      text-align: center;
-      padding-bottom: 50px;
+    .content-head-ft-coff {
       h1 {
-        margin-bottom: 5px;
+        margin-bottom: 30px;
       }
-      .affordable-pricing {
-        transform: translateY(40px);
-        img {
-          width: 50%;
-          transform: translate(-158px, -30px);
-        }
-        .row {
-          margin-top: -35px;
-          .margin40 {
-            margin-bottom: 0;
-          }
+      .col-md-8 {
+        p {
+          margin-top: 0;
         }
       }
     }
   }
   @include breakpoint($bs-xs){
-    .content-head-food-truck {
-      padding-bottom: 70px;
-      .affordable-pricing {
-        img {
-          transform: translate(0, -18px);
-        }
-        .row {
-          margin-top: 0;
-          .margin40 {
-            margin-bottom: 32px;
-          }
-        }
-        .line {
-          margin: 7px 175px;
-        }
-        .bor {
-          display: none;
-          // margin: 0 15px 6px 15px;
-          // max-width: 185px;
-        }
-      }
-    }
+
   }
 }
 
@@ -98,6 +55,9 @@
     h4 {
       margin-bottom: 16px;
       margin-right: -3px;
+    }
+    .point {
+      transform: translate(65px, -236px);
     }
   }
   .location-based {

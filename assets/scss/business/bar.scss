@@ -94,7 +94,7 @@
     font-family: 'MetropolisSemiBold', sans-serif;
     font-size: 18px;
     padding: 7px;
-    right: 0;
+    right: 15px;
     top: 10px;
     color: white;
     text-align: center;
@@ -131,14 +131,10 @@
       }
     }
     .point {
-      position: absolute;
-      transform: translate(-207px, -186px);
-      height: 70px;
+      transform: translate(40px, -185px)
     }
-    .point-green {
-      position: absolute;
-      transform: translate(189px, -244px);
-      height: 70px;
+    .point:last-child {
+      transform: translate(440px, -245px);
     }
   }
 

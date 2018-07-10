@@ -10,24 +10,51 @@
 </head>
 
 <body>
+
+  <div id="mySidenav" class="sidenav">
+    <a id="id-closebtn" href="javascript:void(0)" class="closebtn">&times;</a>
+    <a href="#">Home</a>
+    <a href="#">Personal</a>
+    <a class="nav-link collapsed" href="#submenu1" data-toggle="collapse" data-target="#submenu1">Business</a>
+    <div class="collapse" id="submenu1" aria-expanded="false">
+      <ul class="flex-column pl-2 nav">
+        <li class="nav-item"><a class="nav-link py-0" href="#">Food truck owner</a></li>
+        <li class="nav-item"><a class="nav-link py-0" href="#">Coffee shop owner</a></li>
+        <li class="nav-item"><a class="nav-link py-0" href="#">Bar/ restaurant owner</a></li>
+      </ul>
+    </div>
+    <a href="#">What's Zogo</a>
+    <a href="#">Vision</a>
+    <a href="#">Contact</a>
+    <hr>
+    <div class="log-in-log-out">
+      <a href="#">LOG IN</a>
+      <a href="#">SIGN UP</a>
+    </div>
+  </div>
+  <div id="id-close" class="closebtn-overlay">
+
+  </div>
+  <div id="main">
+
   <div id="header" class="head-food-truck">
     <nav id="top-bar">
       <div class="container">
         <div class="top-bar">
           <div class="left-items">
+            <button class="expand-button" type="button" name="button">
+              <span id="openNav" style="font-size:20px;cursor:pointer">&#9776;</span>
+            </button>
             <a class="logo" href="">
               <img src="assets/img-business/icon/logo-colored.svg" alt="">
             </a>
-            <button class="expand-button" type="button" name="button">
-              <img src="" alt="">
-            </button>
           </div>
           <div class="menu">
             <a href="business.html">What's Zogo</a>
             <a class="pad-40" href="vision.html">Vision</a>
             <a href="contact.html">Contact</a>
           </div>
-          <div class="log-in-log-out">
+          <div id="log-in-out" class="log-in-log-out">
             <a href="#">LOG IN</a>
             <a class="a-button" href="#">SIGN UP</a>
           </div>
@@ -35,25 +62,32 @@
       </div>
     </nav>
     <div class="container">
-      <div class="content-head-food-truck">
+      <div class="content-head-ft-coff">
         <div class="row">
           <div class="col-md-8 col-sm-12">
             <h1>Grow and streamline your Food Truck business with Zogo.</h1>
-            <h6>Minimize lines - Maximize efficiency. Zogo business has all the features and tools you need to grow your Food truck brand. </h6>
+            <p>Minimize lines - Maximize efficiency. Zogo business has all the features and tools you need to grow your Food truck brand. </p>
           </div>
           <div class="col-md-4 col-sm-12">
             <div class="affordable-pricing">
-              <img src="assets/img-business/icon/tag.svg" alt="">
-              <div class="row">
-                <div class="col-sm-6 col-md-12">
-                  <h3>ONLY 1.8%</h3>
-                  <p class="line"></p>
-                  <p class="margin40">PER TRANSACTIONS</p>
-                </div>
-                <div class="col-sm-6 col-md-12">
-                  <p class="bor">No contract</p>
-                  <p class="bor">No monthly charges</p>
-                  <p class="bor">No other fees, ever</p>
+              <div class="pricing">
+                <img src="assets/img-business/icon/tag.svg" alt="">
+                <div class="row">
+                  <div class="col-sm-6 col-md-12">
+                    <div class="head-pri">
+                      <h3>ONLY 1.8%</h3>
+                      <div class="line">
+                      </div>
+                      <p class="">PER TRANSACTIONS</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-12">
+                    <div class="bottom-pri">
+                      <p class="">No contract</p>
+                      <p class="">No monthly charges</p>
+                      <p class="">No other fees, ever</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -76,8 +110,8 @@
             <i class="fas fa-truck"></i> Food truck owner
           </button>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="#"><i class="fas fa-coffee"></i> Coffee shop owner</a>
-            <a class="dropdown-item" href="#"><i class="fas fa-glass-martini"></i> Bar/ restaurant owner</a>
+            <a class="dropdown-item" href="coffee.html"><i class="fas fa-coffee"></i> Coffee shop owner</a>
+            <a class="dropdown-item" href="bar.html"><i class="fas fa-glass-martini"></i> Bar/ restaurant owner</a>
           </div>
         </div>
       </div>
@@ -101,6 +135,9 @@
           </div>
           <div class="col-lg-4 col-sm-6">
             <img src="assets/img-business/food-truck/illu 2@3x.jpg" alt="">
+            <div class="point" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Content">
+              <img src="assets/img-business/icon/blue point.svg" alt="">
+            </div>
           </div>
         </div>
       </div>
@@ -206,9 +243,9 @@
           </div>
           <div class="col-lg-3 col-sm-6">
             <h6>ZogoPay</h6>
-            <p><a href="#">Food truck</a></p>
-            <p><a href="#">Coffe shop</a></p>
-            <p><a href="#">Bar / Restaurant</a></p>
+            <p><a href="food-truck.html">Food truck</a></p>
+            <p><a href="coffee.html">Coffe shop</a></p>
+            <p><a href="bar.html">Bar / Restaurant</a></p>
           </div>
           <div class="col-lg-3 col-sm-6">
             <h6>About us</h6>
@@ -244,10 +281,14 @@
     <div class="back-to-top">
       <img src="assets/img/icon/up-arrow.png" alt="">
     </div>
+</div>
 
 <script>
-
+  $(document).ready(function(){
+      $('[data-toggle="popover"]').popover();
+  });
 </script>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>

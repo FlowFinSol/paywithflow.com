@@ -4,9 +4,7 @@
   background-position-x: center;
   color: white;
 }
-.popover {
-  transform: translate3d(823px, 1195px, 0px)!important;
-}
+
 .content-coffee {
   padding-top: 120px;
   color: #343a4b;
@@ -36,15 +34,8 @@
     h2 {
       text-align: center;
     }
-    .bgr-point {
-      text-align: left;
-      background-image: url("../img-business/coffee/illu 2@3x.jpg");
-      background-size: contain;
-      background-repeat: no-repeat;
-      img {
-        width: 70px;
-        margin: 269px 0 113px 156px;
-      }
+    .point {
+      transform: translate(155px, -180px);
     }
     .height60 {
       margin-bottom: 27px;
@@ -54,17 +45,11 @@
 
   .tablet-printer {
     text-align: center;
-    .point-1 {
-      position: absolute;
-      transform: translate(-268px, -230px);
-      height: 70px;
-      width: 70px;
+    .point {
+      transform: translate(290px, -230px);
     }
-    .point-2 {
-      position: absolute;
-      transform: translate(220px, -160px);
-      height: 70px;
-      width: 70px;
+    .point:last-child {
+      transform: translate(770px, -160px);
     }
     p {
       padding: 8px 125px 22px ;

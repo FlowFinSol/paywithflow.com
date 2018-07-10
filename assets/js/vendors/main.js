@@ -1,3 +1,15 @@
+$("#openNav").click(function() {
+  $('#log-in-out').hide();
+  $("#mySidenav").css("width", "320px");
+  $("#id-close").css("width", "100%");
+})
+
+$("#id-closebtn, #id-close").click(function() {
+  $('#log-in-out').show();
+  $("#mySidenav").css("width", "0px");
+  $(".closebtn-overlay").css("width", "0");
+})
+
 
 $(document).ready(function(){
     $('[data-toggle="popover"]').popover();
