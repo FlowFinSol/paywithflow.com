@@ -150,6 +150,11 @@
 
   }
   @include breakpoint($bs-lg){
+    .order-ahead {
+      .point {
+        transform: translate(55px, -215px);
+      }
+    }
     .price {
       .transaction {
         margin: 50px 50px 50px 22px;
@@ -192,6 +197,11 @@
     }
   }
   @include breakpoint($bs-sm){
+    .order-ahead {
+      .point {
+        transform: translate(40px, -185px);
+      }
+    }
     .tablet-printer {
       text-align: center;
       p:last-child {
@@ -222,6 +232,9 @@
   }
   @include breakpoint($bs-xs){
     .order-ahead {
+      .point {
+        display: none;
+      }
       .col-lg-4:first-child {
         order: 2;
         margin-top: 30px;

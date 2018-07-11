@@ -38,16 +38,6 @@ $(window).scroll(function(){
   else {
     $(".back-to-top").fadeOut();
   }
-
-  // Paralax Background
-  if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
-    $('.introduction').css({'background-position': 'center '+ (-wScroll /3) + 'px'})
-
-    if (wScroll > $('.sending-money').offset().top - hWindow) {
-      var wSendingMoneyScroll = wScroll - $('.sending-money').offset().top + hWindow;
-      $('.sending-money').css({'background-position': 'center '+ (-wSendingMoneyScroll /3 + hWindow/3) + 'px'})
-    }
-  }
 })
 
 // Expand menu

@@ -258,6 +258,14 @@
     }
   }
   @include breakpoint($bs-lg){
+    .order-ahead {
+      .point {
+        transform: translate(32px, -163px);
+      }
+      .point:last-child {
+        transform: translate(360px, -210px);
+      }
+    }
     .prices {
       .bgr-deco {
         background-size: 65%;
@@ -265,6 +273,14 @@
     }
   }
   @include breakpoint($bs-md){
+    .order-ahead {
+      .point {
+        transform: translate(90px, -240px);
+      }
+      .point:last-child {
+        transform: translate(570px, -300px);
+      }
+    }
     .experience {
       .step {
         p {
@@ -293,6 +309,14 @@
     }
   }
   @include breakpoint($bs-sm){
+    .order-ahead {
+      .point {
+        transform: translate(45px, -180px);
+      }
+      .point:last-child {
+        transform: translate(415px, -230px);
+      }
+    }
     .tablet-printer {
       p {
         padding: 8px 5px 32px;
@@ -310,6 +334,9 @@
     }
   }
   @include breakpoint($bs-xs){
+    .point {
+      display: none;
+    }
     .experience {
       h2 {
         margin-bottom: 70px;
