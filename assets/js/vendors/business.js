@@ -1,11 +1,4 @@
 // Web Complete Loaded
-$(window).on('load', function(e) {
-  AOS.init({
-    duration: 1000,
-    easing: 'ease-in-out',
-    disable: 'phone'
-  });
-})
 
 if($(window).width() <= 991) {
   $('#top-logo').attr('src','assets/img/white-logo.png');

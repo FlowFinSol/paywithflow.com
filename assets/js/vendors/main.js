@@ -3,6 +3,13 @@ $("#openNav").click(function() {
   $("#mySidenav").css("width", "320px");
   $("#id-close").css("width", "100%");
 })
+$(window).on('load', function(e) {
+  AOS.init({
+    duration: 1000,
+    easing: 'ease-in-out',
+    disable: 'phone'
+  });
+})
 
 $("#id-closebtn, #id-close").click(function() {
   $('#log-in-out').show();

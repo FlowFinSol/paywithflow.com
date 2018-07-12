@@ -6,32 +6,32 @@
 
 @font-face {
    font-family: MetropolisMedium;
-   src: url(../font/metropolis/Metropolis-Medium.woff2);
-}
-
-@font-face {
-   font-family: MetropolisRegular;
    src: url(../font/metropolis/Metropolis-Regular.woff2);
 }
 
 @font-face {
+   font-family: MetropolisRegular;
+   src: url(../font/metropolis/Metropolis-Light.woff2);
+}
+
+@font-face {
    font-family: MetropolisSemiBold;
-   src: url(../font/metropolis/Metropolis-SemiBold.woff2);
+   src: url(../font/metropolis/Metropolis-Medium.woff2);
 }
 
 @font-face {
    font-family: MetropolisExtraLight;
-   src: url(../font/metropolis/Metropolis-ExtraLight.woff2);
+   src: url(../font/metropolis/Metropolis-Thin.woff2);
 }
 
 @font-face {
    font-family: MetropolisBold;
-   src: url(../font/metropolis/Metropolis-Bold.woff2);
+   src: url(../font/metropolis/Metropolis-SemiBold.woff2);
 }
 
 @font-face {
    font-family: MetropolisLightItalic;
-   src: url(../font/metropolis/Metropolis-LightItalic.woff2);
+   src: url(../font/metropolis/Metropolis-ExtraLightItalic.woff2);
 }
 
 @import "variables";

@@ -12,15 +12,17 @@
 <body>
 
   <div id="mySidenav" class="sidenav">
-    <a id="id-closebtn" href="javascript:void(0)" class="closebtn">&times;</a>
+    <a id="id-closebtn" href="javascript:void(0)" class="closebtn">
+      <img src="assets/img-business/icon/close-icon.svg" alt="">
+    </a>
     <a href="#">Home</a>
     <a href="#">Personal</a>
     <a class="nav-link collapsed" href="#submenu1" data-toggle="collapse" data-target="#submenu1">Business</a>
     <div class="collapse" id="submenu1" aria-expanded="false">
       <ul class="flex-column pl-2 nav">
-        <li class="nav-item"><a class="nav-link py-0" href="#">Food truck owner</a></li>
-        <li class="nav-item"><a class="nav-link py-0" href="#">Coffee shop owner</a></li>
-        <li class="nav-item"><a class="nav-link py-0" href="#">Bar/ restaurant owner</a></li>
+        <li class="nav-item"><a class="nav-link py-0" href="food-truck.html">Food truck owner</a></li>
+        <li class="nav-item"><a class="nav-link py-0" href="coffee.html">Coffee shop owner</a></li>
+        <li class="nav-item"><a class="nav-link py-0" href="bar.html">Bar/ restaurant owner</a></li>
       </ul>
     </div>
     <a href="#">What's Zogo</a>
@@ -43,7 +45,7 @@
         <div class="top-bar">
           <div class="left-items">
             <button class="expand-button" type="button" name="button">
-              <span id="openNav" style="font-size:20px;cursor:pointer">&#9776;</span>
+              <img id="openNav" src="assets/img-business/icon/menu-icon.svg" alt="">
             </button>
             <a class="logo" href="landing-page.html">
               <img src="assets/img-business/icon/logo-colored.svg" alt="">
@@ -63,14 +65,14 @@
     </nav>
     <div class="container">
       <div class="content-head-bar">
-        <h5>How much revenue is lost because customers were not served on time?</h5>
-        <h5>What if customers were able to order drinks and food right from their table with their phone?</h5>
-        <h5>And what if your servers and bartenders had an additional helping hand?</h5>
-        <p>
+        <h5 data-aos="fade-down" data-aos-duration="1000">How much revenue is lost because customers were not served on time?</h5>
+        <h5 data-aos="fade-down" data-aos-delay="1500" data-aos-duration="1000">What if customers were able to order drinks and food right from their table with their phone?</h5>
+        <h5 data-aos="fade-down" data-aos-delay="2500" data-aos-duration="1500">And what if your servers and bartenders had an additional helping hand?</h5>
+        <p data-aos="fade-down" data-aos-delay="3000" data-aos-duration="1500">
           <img src="assets/img-business/icon/logo-symbol-white.svg" alt="">
           We make it easy! We are the helping hand for your staff to sell more and be more efficient.
         </p>
-        <a href="#"><img src="assets/img-business/icon/Arrow-down.svg" alt=""></a>
+        <a data-aos="fade-down" data-aos-delay="3000" data-aos-duration="1500" href="#"><img src="assets/img-business/icon/Arrow-down.svg" alt=""></a>
       </div>
     </div>
   </div>
@@ -285,10 +287,7 @@
   <div class="back-to-top">
     <i class="fas fa-angle-double-up"></i>
   </div>
-
-<script>
-
-</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>

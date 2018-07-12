@@ -1,7 +1,7 @@
 .head-food-truck {
   background-image: linear-gradient(rgba(5,14,22,0.7), rgba(5,14,22,0.7)),url(../img-business/food-truck/ftruck-bg@3x.jpg);
   background-size: cover;
-  background-position-x: center;
+  background-position: center;
   color: white;
   .content-head-ft-coff {
     .col-md-8 {
@@ -47,7 +47,6 @@
   font-family: 'MetropolisRegular', sans-serif;
   color: #343a4b;
   img {
-    // height: 100%;
     width: 100%;
     border-radius: 4px;
   }
@@ -61,9 +60,13 @@
     }
   }
   .location-based {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     h4 {
       margin-bottom: 32px;
+      max-width: 700px;
     }
   }
   .tablet-printer {
@@ -124,8 +127,14 @@
       position: relative;
       color: #6c707a;
       text-align: center;
+      h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+      }
       p {
         color: #6c707a;
+        font-size: 18px;
+        margin-top: 12px;
       }
       .line {
         height: 1px;
@@ -138,7 +147,13 @@
     padding-top: 265px;
     padding-bottom: 107px;
     img {
-      width: 80%;
+      width: 73%;
+    }
+    .a-button {
+      &:hover {
+        background-color: #25C5C7;
+        color: white;
+      }
     }
     h4 {
       padding-top: 100px;
@@ -186,7 +201,7 @@
         padding-top: 60px;
       }
       .transaction {
-        margin: 50px 50px 50px -45px;
+        margin: 50px 50px 50px 0px;
         padding: 60px 40px;
       }
     }
