@@ -29,6 +29,11 @@
       @content;
     }
   }
+  @else if $point == $bs-xxs {
+     @media only screen and (max-width:$bs-xxs){
+      @content;
+    }
+  }
   @else if $point == $bs-ss {
      @media only screen and (max-width:$bs-ss){
       @content;

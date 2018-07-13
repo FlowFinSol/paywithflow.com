@@ -14,13 +14,20 @@
       line-height: 34px;
       i {
         padding-top: 5px;
-        padding-right: 24px;
+        // margin-right: 24px;
         font-size: 24px;
         color: #838383;
       }
       &:hover {
         text-decoration: none;
+        color: #2EB9BB;
+        i {
+          color: white;
+        }
       }
+    }
+    .margin-40 {
+      margin-right: 40px;
     }
   }
   hr {
@@ -34,6 +41,9 @@
     p {
       font-family: 'MetropolisRegular', sans-serif;
       color: #838383;
+      &:hover {
+        color: white;
+      }
     }
     .policy {
       display: flex;

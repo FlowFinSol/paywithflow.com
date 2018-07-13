@@ -33,26 +33,26 @@
       font-size: 17px;
       border-radius: 50px;
       background-image: linear-gradient(to top, #008fbd, #00b8d2);
-      padding: 12px 0px;
+      padding: 12px 30px 12px 70px;
       color: white;
       margin-bottom: 20px;
       img {
-        width: 3%;
-        margin-right: 10px;
+        position: absolute;
+        width: 24px;
+        left: 25px;
+        top: 27%;
       }
     }
     img {
-      width: 21%;
+      width: 32px;
     }
   }
   @include breakpoint($bs-md){
     .content-head-bar {
       p {
-        padding: 12px 36px 12px 30px;
+        // padding: 12px 36px 12px 30px;
         img {
-          width: 4%;
-          margin-right: 20px;
-          transform: translateY(10px);
+          top: 31%;
         }
       }
     }
@@ -61,29 +61,57 @@
     .content-head-bar {
       h5 {
         font-size: 22px;
-        padding: 9px 15px;
+        padding: 9px 20px;
         margin-bottom: 30px;
       }
       h5:nth-child(3) {
         margin-bottom: 100px;
       }
       p {
-        padding: 12px 50px 12px 50px;
+        // padding: 12px 50px 12px 50px;
         img {
-          width: 6%;
-          margin-right: -30px;
-          transform: translate(-45px,12px)
+          // width: 6%;
+          // margin-right: -30px;
+          // transform: translate(-45px,12px)
         }
       }
     }
   }
   @include breakpoint($bs-xs){
     .content-head-bar {
+      h5 {
+        padding: 9px 30px;
+      }
       p {
-        padding: 12px 50px 12px 60px;
+        // padding: 12px 50px 12px 60px;
         img {
-          width: 9%;
-          transform: translate(-50px, 25px)
+          // width: 9%;
+          // transform: translate(0);
+          // position: absolute;
+          // left: 20px;
+        }
+      }
+    }
+  }
+  @include breakpoint($bs-xxs){
+    .content-head-bar {
+      p {
+        img {
+          top: 36%;
+        }
+      }
+    }
+  }
+  @include breakpoint($bs-ss){
+    .content-head-bar {
+      h5 {
+        border-radius: 30px;
+      }
+      p {
+        border-radius: 30px;
+        // padding: 12px 30px 12px 55px;
+        img {
+          left: 20px;
         }
       }
     }
@@ -95,7 +123,7 @@
     font-family: 'MetropolisSemiBold', sans-serif;
     font-size: 18px;
     padding: 7px;
-    right: 15px;
+    right: 0px;
     top: 10px;
     color: white;
     text-align: center;
@@ -105,6 +133,9 @@
     transform: rotate(2deg);
     border-radius: 20px;
     background-image: linear-gradient(to top, #2fa2d0, #39c2e2);
+    @include breakpoint($bs-xs){
+      right: 15px;
+    }
   }
 }
 
@@ -207,7 +238,7 @@
     color: white;
     .bgr-deco {
       background-image: url("../img-business/bar/decor @3x.png");
-      background-size: 50%;
+      background-size: 880px;
       background-repeat: no-repeat;
       background-position: right;
       padding-top: 120px;
@@ -231,10 +262,11 @@
         position: relative;
         color: #6c707a;
         text-align: center;
+        h4 {
+          font-family: 'MetropolisBold', sans-serif;
+        }
         p {
           color: #6c707a;
-        }
-        p:last-child{
           margin-top: 10px;
         }
         hr {
@@ -251,6 +283,12 @@
     padding-top: 120px;
     padding-bottom: 124px;
     text-align: center;
+    .a-button {
+      &:hover {
+        background-color: #25C5C7;
+        color: white;
+      }
+    }
     h4 {
       padding-bottom: 5px;
     }
@@ -341,6 +379,15 @@
     .experience {
       h2 {
         margin-bottom: 70px;
+      }
+      .step {
+        h1 {
+          font-size: 30px;
+          padding: 0px 19px;
+        }
+        .h1-first {
+          padding: 0px 23px;
+        }
       }
     }
   }

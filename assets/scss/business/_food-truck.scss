@@ -27,6 +27,9 @@
   }
   @include breakpoint($bs-sm){
     .content-head-ft-coff {
+      .col-md-8 {
+        padding-right: 15px;
+      }
       h1 {
         margin-bottom: 30px;
       }
@@ -128,7 +131,7 @@
       color: #6c707a;
       text-align: center;
       h3 {
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'MetropolisBold', sans-serif;
         font-weight: 600;
       }
       p {
