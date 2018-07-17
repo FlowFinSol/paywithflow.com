@@ -47,6 +47,22 @@ body {
   }
 }
 
+[data-aos=fade-left] {
+    transform: translate(50px);
+}
+
+[data-aos=fade-right] {
+    transform: translate(-50px);
+}
+
+[data-aos=fade-up] {
+    transform: translateY(50px);
+}
+
+[data-aos=fade-down] {
+    transform: translateY(-50px);
+}
+
 .ani-aos {
   overflow: hidden;
 }
@@ -195,15 +211,18 @@ body {
         width: 240px;
         height: 32px;
         background: #fdfdfd;
-        border-color: #e1e1e1;
+        border: 1px solid #e1e1e1;
+        // border-color:
         border-radius: 4px;
         color: #6c707a;
         padding-top: 5px;
+        outline: none;
+        // border-style: none;
         &:focus {
           outline: none;
         }
         &:active {
-          border-style: double;
+          border-style: none;
         }
         &::after {
           margin-left: 15px;
@@ -254,6 +273,14 @@ body {
       }
     }
   }
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100
 }
 
 .line-page {

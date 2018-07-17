@@ -6,7 +6,7 @@ $("#openNav").click(function() {
 
 $(window).on('load', function(e) {
   AOS.init({
-    duration: 800,
+    duration: 600,
     easing: 'ease-in-out',
     disable: window.innerWidth < 992
   });
