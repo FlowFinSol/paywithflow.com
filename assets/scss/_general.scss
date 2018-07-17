@@ -262,6 +262,7 @@ body {
   @include breakpoint($bs-md){
     .content-menu {
       justify-content: center;
+      padding: 20px 0 13px;
       a {
         display: none;
       }

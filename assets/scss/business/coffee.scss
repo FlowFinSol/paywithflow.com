@@ -62,10 +62,7 @@
     }
     h4 {
       padding-bottom: 8px;
-    }
-    .height60 {
-      margin-bottom: 27px;
-      height: 62%;
+      margin-top: 30px;
     }
   }
   .prices {
@@ -188,9 +185,6 @@
       img {
         height: auto;
       }
-      .height60 {
-        height: 44%;
-      }
     }
     .prices {
       .bgr {
@@ -235,6 +229,9 @@
     }
     .offer-reward {
       text-align: center;
+      p {
+        margin-bottom: 30px;
+      }
     }
     .prices {
       text-align: center;

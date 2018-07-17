@@ -53,6 +53,11 @@
   }
   @include breakpoint($bs-md){
     .content-head-bar {
+      .read-more {
+        img {
+          display: none;
+        }
+      }
     }
   }
   @include breakpoint($bs-sm){
@@ -68,6 +73,16 @@
     }
   }
   @include breakpoint($bs-xs){
+    .content-head-bar {
+      .read-more {
+        p {
+          padding: 9px 30px;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+  @include breakpoint($bs-xxs){
     .content-head-bar {
       h5 {
         padding: 9px 30px;
