@@ -77,41 +77,41 @@ $(".back-to-top").click(function () {
 // var elementpos= $('#order-ahead').offset().top; //get position of element to scroll to.
 
 
-var speed = 1100; //time, in milliseconds, for the scroll action to complete.
-
-$('#order, #more').click(function(e){ //select anchor links that start with #
-  e.preventDefault(); //prevent normal jump to anchor action
-  var elementpos= $('#order-ahead').offset().top - 193; //get position of element to scroll to.
-  $('html, body').animate({scrollTop: elementpos+ 'px'}, speed); //animate the scroll.
-});
-
-$('#location').click(function(e){ //select anchor links that start with #
-  e.preventDefault(); //prevent normal jump to anchor action
-  var elementpos= $('#location-based').offset().top - 193; //get position of element to scroll to.
-  $('html, body').animate({scrollTop: elementpos+ 'px'}, speed); //animate the scroll.
-});
-
-$('#tablet').click(function(e){ //select anchor links that start with #
-  e.preventDefault(); //prevent normal jump to anchor action
-  var elementpos= $('#tablet-printer').offset().top - 193; //get position of element to scroll to.
-  $('html, body').animate({scrollTop: elementpos+ 'px'}, speed); //animate the scroll.
-});
-
-$('#offer').click(function(e){ //select anchor links that start with #
-  e.preventDefault(); //prevent normal jump to anchor action
-  var elementpos= $('#offer-reward').offset().top - 193; //get position of element to scroll to.
-  $('html, body').animate({scrollTop: elementpos+ 'px'}, speed); //animate the scroll.
-});
-
-$('#prices').click(function(e){ //select anchor links that start with #
-  e.preventDefault(); //prevent normal jump to anchor action
-  var elementpos= $('#affordable-price').offset().top - 193; //get position of element to scroll to.
-  $('html, body').animate({scrollTop: elementpos+ 'px'}, speed); //animate the scroll.
-});
-
-$('#experience').click(function(e){ //select anchor links that start with #
-  e.preventDefault(); //prevent normal jump to anchor action
-  var elementpos= $('#new-experience').offset().top - 193; //get position of element to scroll to.
-  var elementpos2= $('#new-experience').offset().top; //get position of element to scroll to.
-  $('html, body').animate({scrollTop: elementpos+ 'px'}, speed); //animate the scroll.
-});
+// var speed = 1100; //time, in milliseconds, for the scroll action to complete.
+//
+// $('#order, #more').click(function(e){ //select anchor links that start with #
+//   e.preventDefault(); //prevent normal jump to anchor action
+//   var elementpos= $('#order-ahead').offset().top - 193; //get position of element to scroll to.
+//   $('html, body').animate({scrollTop: elementpos+ 'px'}, speed); //animate the scroll.
+// });
+//
+// $('#location').click(function(e){ //select anchor links that start with #
+//   e.preventDefault(); //prevent normal jump to anchor action
+//   var elementpos= $('#location-based').offset().top - 193; //get position of element to scroll to.
+//   $('html, body').animate({scrollTop: elementpos+ 'px'}, speed); //animate the scroll.
+// });
+//
+// $('#tablet').click(function(e){ //select anchor links that start with #
+//   e.preventDefault(); //prevent normal jump to anchor action
+//   var elementpos= $('#tablet-printer').offset().top - 193; //get position of element to scroll to.
+//   $('html, body').animate({scrollTop: elementpos+ 'px'}, speed); //animate the scroll.
+// });
+//
+// $('#offer').click(function(e){ //select anchor links that start with #
+//   e.preventDefault(); //prevent normal jump to anchor action
+//   var elementpos= $('#offer-reward').offset().top - 193; //get position of element to scroll to.
+//   $('html, body').animate({scrollTop: elementpos+ 'px'}, speed); //animate the scroll.
+// });
+//
+// $('#prices').click(function(e){ //select anchor links that start with #
+//   e.preventDefault(); //prevent normal jump to anchor action
+//   var elementpos= $('#affordable-price').offset().top - 193; //get position of element to scroll to.
+//   $('html, body').animate({scrollTop: elementpos+ 'px'}, speed); //animate the scroll.
+// });
+//
+// $('#experience').click(function(e){ //select anchor links that start with #
+//   e.preventDefault(); //prevent normal jump to anchor action
+//   var elementpos= $('#new-experience').offset().top - 193; //get position of element to scroll to.
+//   var elementpos2= $('#new-experience').offset().top; //get position of element to scroll to.
+//   $('html, body').animate({scrollTop: elementpos+ 'px'}, speed); //animate the scroll.
+// });

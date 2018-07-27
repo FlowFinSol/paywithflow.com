@@ -36,6 +36,7 @@
         img {
           max-height: 230px;
           margin-bottom: 30px;
+          object-fit: cover;
         }
         h4 {
           margin-bottom: 24px;
@@ -66,12 +67,18 @@
         }
       }
       .right {
+        // object-fit: cover;
+        overflow: hidden;
         height: 580px;
-        img {
-          height: inherit;
+        .img-bgr {
+          object-fit: cover;
+          top:0;
+          bottom:0;
+          margin: auto;
+          height: 100%;
         }
         .point {
-          transform: translate(155px, -180px);
+          transform: translate(135px, -230px);
         }
       }
     }
@@ -204,8 +211,10 @@
   @include breakpoint($bs-lg){
     .content-coffee {
       .order-ahead {
-        .point {
-          transform: translate(122px, -160px);
+        .right {
+          .point {
+            transform: translate(90px, -230px);
+          }
         }
       }
       .tablet-printer {
@@ -233,8 +242,10 @@
   @include breakpoint($bs-md){
     .content-coffee {
       .order-ahead {
-        .point {
-          transform: translate(80px, -127px);
+        .right {
+          .point {
+            transform: translate(30px, -230px);
+          }
         }
       }
       .tablet-printer {
@@ -271,8 +282,15 @@
   @include breakpoint($bs-sm){
     .content-coffee {
       .order-ahead {
-        .point {
-          transform: translate(145px, -175px);
+        .left {
+          h5 {
+            margin-bottom: 30px;
+          }
+        }
+        .right {
+          .point {
+            transform: translate(120px, -230px);
+          }
         }
         h4 {
           margin-bottom: 30px;

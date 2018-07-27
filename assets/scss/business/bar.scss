@@ -74,10 +74,9 @@
   }
 
   .content-bar {
-    padding-top: 120px;
     color: #343a4b;
     .line-page {
-      margin: 100px 0;
+      margin: 80px 0 100px;
     }
     p, h4, h1 {
       font-family: 'MetropolisRegular', sans-serif;
@@ -86,131 +85,90 @@
       width: 100%;
       border-radius: 4px;
     }
-    .order-ahead {
-      p {
-        margin-top: 16px;
-        border-left: 4px solid #2eb9bb;
-        padding-left: 26px;
-        margin-bottom: 30px;
-        b {
-          color: #343a4b;
-        }
-      }
-      .point {
-        transform: translate(40px, -185px)
-      }
-      .point:last-child {
-        transform: translate(440px, -245px);
-      }
-    }
 
-    .tablet-printer {
-      text-align: center;
-      p {
-        padding: 8px 125px 32px ;
-      }
-    }
-    .experience {
-      background: linear-gradient(to bottom, #ffffff, #ecf6ff);
-      padding-bottom: 70px;
-      h2 {
-        font-family: 'MetropolisExtraLight', sans-serif;
+    .content-header {
+      padding-bottom: 120px;
+      border-bottom: 1px solid #e9e9e9;
+      background-image: linear-gradient(to bottom, #ffffff, #ecf6ff);
+      .tablet-printer {
         text-align: center;
-        margin-bottom: 100px;
-        color: #2eb9bb;
-      }
-      h2:last-child {
-        margin-bottom: 0;
-        margin-top: 20px;
-      }
-      .row {
-        margin-bottom: 80px;
-      }
-      .step {
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-        align-items: flex-start;
-        h1 {
-          border: 4px solid rgba(51, 179, 216, 0.15);
-          border-radius: 50px;
-          margin-right: 15px;
-          padding: 11px 27px;
-          color: #2eb9bb;
-        }
-        .h1-first {
-          padding: 9px 30px;
-        }
-        h4 {
-          margin-bottom: 16px;
-        }
-      }
-      .change-experience {
-        h5 {
-          font-family: 'MetropolisLightItalic', sans-serif;
-        }
-        p {
-          margin-top: 8px;
-          margin-bottom: 42px;
-        }
-        .line-p {
+        margin-top: 140px;
+        .text {
           display: flex;
-          .lineY {
-            height: 40px;
-            width: 8px;
-            border-radius: 4px;
-            background-color: #2eb9bb;
-            margin-right: 24px;
-            margin-top: 12px;
-          }
-        }
-      }
-    }
-
-    .prices {
-      background: linear-gradient(to right, #7aa9dc, #49c1c3);
-      color: white;
-      .bgr-deco {
-        background-image: url("../img-business/bar/decor @3x.png");
-        background-size: 880px;
-        background-repeat: no-repeat;
-        background-position: right;
-        padding-top: 120px;
-        p {
-          color: white;
-        }
-        img {
-          position: absolute;
-          margin-left: -80px;
-        }
-        .left {
-          h4 {
-            padding-bottom: 8px;
-          }
-        }
-        .transaction {
-          background-color: white;
-          margin-bottom: 110px;
-          border-radius: 8px;
-          padding: 42px 32px;
-          position: relative;
-          color: #6c707a;
-          text-align: center;
-          h4 {
-            font-family: 'MetropolisBold', sans-serif;
+          flex-direction: column;
+          align-items: center;
+          h2 {
+            max-width: 880px;
+            color: #2eb9bb;
+            margin-bottom: 100px;
+            line-height: 54px;
+            font-family: 'MetropolisExtraLight', sans-serif;
           }
           p {
-            color: #6c707a;
-            margin-top: 10px;
+            margin-top: 8px;
+            margin-bottom: 32px;
+            max-width: 605px;
           }
-          hr {
-            width: 180px;
-            background-color: #5bcbcd;
-            margin-top: 0;
+        }
+      }
+
+      .orders {
+        text-align: center;
+        .order {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 100%;
+          p {
+            margin-top: 8px;
+            margin-bottom: 24px;
+            padding: 0 30px;
+          }
+        }
+      }
+
+      .tapped {
+        text-align: center;
+        p {
+          margin-top: 8px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    .content-footer {
+      padding-top: 140px;
+      background-image: linear-gradient(to top, #f7fbff, #ecf6ff);
+
+      .service {
+        h2 {
+          text-align: center;
+        }
+        .content {
+          display: flex;
+          background: white;
+
+          margin-bottom: 30px;
+          .left {
+            display: flex;
+            align-items: center;
+            border-right: 1px solid #e9e9e9;
+            i {
+              font-size: 32px;
+              padding: 0 55px;
+              color: #0b80dc
+            }
+          }
+          .right {
+            padding: 30px 50px 22px;
+            p:first-child {
+              font-family: 'MetropolisMedium', sans-serif;
+            }
           }
         }
       }
     }
+
 
     .start {
       background-color: #f3f5f6;

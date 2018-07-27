@@ -190,71 +190,43 @@ body {
   .content-menu {
     display: flex;
     justify-content: space-between;
-    padding: 27px 0 20px;
-    a {
-      cursor: pointer;
-      font-size: 15px;
-      color: #6c707a;
-      &:hover {
-        color: #2EB9BB;
-      }
+    padding: 13px 0;
+    h6 {
+      // line-height: 40px;
+      margin: 0;
+      color: #9498a6;
+      font-family: 'MetropolisExtraLight', sans-serif;
     }
-    .dropdown {
-      margin-left: 60px;
-      margin-top: -7px;
-      font-size: 14px;
-      &:focus {
-        outline: none;
+    .type {
+      flex-direction: row;
+      display: flex;
+      span {
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        color: #e1e1e1;
+        margin: 0 30px;
       }
-      .dropdown-toggle {
+      a {
         cursor: pointer;
-        width: 240px;
-        height: 32px;
-        background: #fdfdfd;
-        border: 1px solid #e1e1e1;
-        // border-color:
-        border-radius: 4px;
-        color: #6c707a;
-        padding-top: 5px;
-        outline: none;
-        // border-style: none;
-        &:focus {
-          outline: none;
-        }
-        &:active {
-          border-style: none;
-        }
-        &::after {
-          margin-left: 15px;
-        }
-      }
-      .dropdown-menu {
-        width: 240px;
-        text-align: left;
-        padding-top: 10px;
-        // padding-left: 15px;
-        box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.15);
-        border: none;
-        margin-top: 10px;
-        .dropdown-item {
-          padding-left: 25px;
-          padding-top: 20px;
-          padding-bottom: 20px;
-        }
-      }
-      i {
-        padding-right: 15px;
         font-size: 14px;
-        color: #2eb9bb;
-      }
-    }
-    .show {
-      .dropdown-toggle {
-        &::after {
-          border-top: 0;
-          border-right: .3em solid transparent;
-          border-bottom: .3em solid;
-          border-left: .3em solid transparent;
+        line-height: 20px;
+        color: #6c707a;
+        background: white;
+        border: 1px solid #e1e1e1;
+        display: flex;
+        align-items: center;
+        padding: 2px 20px 0;
+        border-radius: 50px;
+        i {
+          color: #2EB9BB;
+          margin-right: 10px;
+        }
+        &:hover {
+          color: #2EB9BB;
+        }
+        &:last-child {
+          margin-left: 20px;
         }
       }
     }
@@ -262,14 +234,22 @@ body {
   @include breakpoint($bs-md){
     .content-menu {
       justify-content: center;
-      padding: 20px 0 13px;
-      a {
+      h6 {
         display: none;
       }
-      .dropdown {
-        margin-left: 0px;
+
+    }
+  }
+  @include breakpoint($bs-sm){
+    .content-menu {
+      .type {
+        span {
+          margin: 0 20px;
+        }
         a {
-          display: block;
+          i {
+            margin-right: 15px;
+          }
         }
       }
     }
