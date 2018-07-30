@@ -34,17 +34,6 @@ body {
       text-decoration: none;
     }
   }
-  @include breakpoint($bs-xx){
-    h1 {
-
-    }
-    h2 {
-
-    }
-    p {
-
-    }
-  }
 }
 
 [data-aos=fade-left] {
@@ -125,14 +114,26 @@ body {
     }
   }
   @include breakpoint($bs-md){
+    .col-md-7 {
+      padding-right: 0;
+    }
+    .affordable-pricing {
+      .pricing {
+        padding: 0 30px;
+      }
+    }
     h1 {
-      font-size: 40px;
+      font-size: 38px;
       line-height: 48px;
     }
   }
   @include breakpoint($bs-sm){
     text-align: center;
+    .col-md-7 {
+      padding-right: 15px;
+    }
     h1 {
+      font-size: 40px;
       margin-bottom: 50px;
     }
     .affordable-pricing {
@@ -192,19 +193,23 @@ body {
     justify-content: space-between;
     padding: 13px 0;
     h6 {
-      // line-height: 40px;
+      line-height: 36px;
       margin: 0;
       color: #9498a6;
       font-family: 'MetropolisExtraLight', sans-serif;
+      transform: translateY(3px);
     }
     .type {
       flex-direction: row;
       display: flex;
+      align-items: center;
       span {
         display: flex;
         align-items: center;
         font-size: 25px;
-        color: #e1e1e1;
+        background: #e1e1e1;
+        width: 1px;
+        height: 16px;
         margin: 0 30px;
       }
       a {
@@ -218,15 +223,21 @@ body {
         align-items: center;
         padding: 2px 20px 0;
         border-radius: 50px;
+        height: 36px;
         i {
           color: #2EB9BB;
           margin-right: 10px;
         }
         &:hover {
-          color: #2EB9BB;
+          background: #2EB9BB;
+          color: white;
+          border: 1px solid #2EB9BB;
+          i {
+            color: white;
+          }
         }
         &:last-child {
-          margin-left: 20px;
+          margin-left: 25px;
         }
       }
     }
@@ -244,12 +255,32 @@ body {
     .content-menu {
       .type {
         span {
-          margin: 0 20px;
+          display: none;
         }
         a {
-          i {
+          padding: 2px 11px;
+          &:first-child {
             margin-right: 15px;
           }
+          &:last-child {
+            margin-left: 15px;
+          }
+          i {
+            // margin-right: 15px;
+          }
+        }
+      }
+    }
+  }
+  @include breakpoint($bs-xs){
+    .content-menu {
+      padding: 13px 0 6px;
+      .type {
+        flex-direction: column;
+        a {
+          margin-left: 0!important;
+          margin-right: 0!important;
+          margin-bottom: 10px;
         }
       }
     }

@@ -51,12 +51,12 @@
       p {
         margin-bottom: 20px;
       }
-      .img-left {
-        height: 190px;
-      }
-      .img-right{
-        height: 570px;
-      }
+      // .img-left {
+      //   height: 190px;
+      // }
+      // .img-right{
+      //   height: 570px;
+      // }
       .step {
         display: flex;
         text-align: left;
@@ -248,6 +248,9 @@
         text-align: center;
         p:last-child {
           margin-bottom: 32px;
+        }
+        .img-right {
+          margin-top: 20px;
         }
       }
       .price {

@@ -29,11 +29,12 @@ $(document).ready(function(){
 
 $(window).scroll(function(){
   var wScroll = $(this).scrollTop()
-  var hWindow = $(window).height()
+  var hWindow = $(window).height();
+  var wWindow = $(window).outerWidth();
   var height = $("#header").height();
-
+console.log('123123', wWindow);
 // position fixed menu
-  if (wScroll >= height) {
+  if ((wScroll >= height) && (wWindow > 575)) {
     $('.menu-business').addClass("fixed");
   } else {
     $('.menu-business').removeClass("fixed");

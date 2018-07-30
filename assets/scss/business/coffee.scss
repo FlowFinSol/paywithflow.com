@@ -44,21 +44,26 @@
         .step {
           display: flex;
           margin-bottom: 8px;
-          p:first-child {
-            width: 36px;
-            height: 36px;
-            border: solid 2px rgba(91, 203, 205, 0.23);
-            border-radius: 50px;
-            line-height: 34px;
-            text-align: center;
-            color: #2eb9bb;
-            font-size: 22px;
-            font-family: 'MetropolisBold', sans-serif;
+          .step-number {
+            p {
+              width: 36px;
+              height: 36px;
+              border: solid 2px rgba(91, 203, 205, 0.23);
+              border-radius: 50px;
+              line-height: 34px;
+              text-align: center;
+              color: #2eb9bb;
+              font-size: 22px;
+              font-family: 'MetropolisBold', sans-serif;
+            }
           }
-          p:last-child {
+          .step-content {
+            margin-left: 20px;
+            p {
+              // margin-left: 14px;
+              padding-top: 6px;
+            }
             // line-height: 36px;
-            margin-left: 14px;
-            padding-top: 6px;
           }
         }
         h5 {
