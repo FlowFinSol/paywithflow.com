@@ -32,7 +32,6 @@ $(window).scroll(function(){
   var hWindow = $(window).height();
   var wWindow = $(window).outerWidth();
   var height = $("#header").height();
-console.log('123123', wWindow);
 // position fixed menu
   if ((wScroll >= height) && (wWindow > 575)) {
     $('.menu-business').addClass("fixed");
