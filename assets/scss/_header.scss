@@ -14,7 +14,7 @@
     padding: 0;
   }
   a {
-    margin: 8px 8px 50px 32px;
+    margin: 8px 8px 45px 32px;
     text-decoration: none;
     font-size: 16px;
     line-height: 1;
@@ -41,7 +41,7 @@
   }
   .log-in-log-out {
     font-size: 14px;
-    margin: 50px 35px 50px 0px;
+    margin: 45px 35px 0px 0px;
     display: flex;
     font-family: 'MetropolisSemiBold', sans-serif;
     justify-content: space-between;
@@ -146,6 +146,64 @@ nav {
         text-decoration: none;
         &:hover {
           background: rgba(255, 255, 255, 0.2);
+        }
+      }
+      .dropdown {
+        margin-top: 3px;
+        .show {
+          display: none;
+        }
+        .btn-drop {
+          color: white;
+          &::after {
+            content: "▾";
+          }
+        }
+        .dropdown-menu {
+          padding: 0;
+          margin: 0;
+          border: none;
+          box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.15);
+          left: -113px;
+          a {
+            color: #6c707a;
+            border-radius: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 20px;
+            &:nth-child(2) {
+              border-top: 1px solid #ebebeb;
+              border-bottom: 1px solid #ebebeb;
+            }
+            i {
+              margin-top: 3px;
+              margin-left: 25px;
+              color: #2eb9bb;
+              font-size: 15px;
+            }
+            &:hover {
+              background-color: #2eb9bb;
+              color: white;
+              // border-radius: .25rem;
+              &:first-child {
+                border-top-left-radius: 0.25rem;
+                border-top-right-radius: 0.25rem;
+              }
+              &:last-child {
+                border-bottom-right-radius: 0.25rem;
+                border-bottom-left-radius: 0.25rem;
+              }
+              i {
+                color: white;
+              }
+            }
+          }
+        }
+        &:hover {
+          .show {
+            display: block;
+          }
         }
       }
     }
