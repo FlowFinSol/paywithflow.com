@@ -228,6 +228,13 @@ body {
           color: #2EB9BB;
           margin-right: 10px;
         }
+        &:first-child {
+          border: 1px solid #79c4c5;
+          color: #10c5c7;
+        }
+        &:last-child {
+          margin-left: 25px;
+        }
         &:hover {
           background: #2EB9BB;
           color: white;
@@ -235,9 +242,6 @@ body {
           i {
             color: white;
           }
-        }
-        &:last-child {
-          margin-left: 25px;
         }
       }
     }

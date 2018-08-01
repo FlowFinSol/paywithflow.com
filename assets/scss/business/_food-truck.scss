@@ -196,8 +196,8 @@
     .content-food-truck {
       .order-ahead {
         text-align: center;
-        h4 {
-          margin-top: 30px;
+        p:last-child {
+          margin-bottom: 30px;
         }
       }
       .offer-reward {

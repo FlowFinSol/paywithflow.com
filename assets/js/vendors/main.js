@@ -8,6 +8,7 @@ $(window).on('load', function(e) {
   AOS.init({
     duration: 600,
     easing: 'ease-in-out',
+    once: true,
     disable: window.innerWidth < 992
   });
 })
