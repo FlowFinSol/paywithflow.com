@@ -115,6 +115,7 @@
 
     .espresso {
       text-align: center;
+      margin-bottom: -90px;
       .contents {
         transform: translateY(-113px);
         display: grid;
@@ -318,6 +319,7 @@
       }
       .espresso {
         padding-bottom: 30px;
+        margin-bottom: 0px;
         .contents {
           transform: translateY(30px);
           grid-template-columns: auto;
