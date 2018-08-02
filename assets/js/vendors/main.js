@@ -9,6 +9,7 @@ $(window).on('load', function(e) {
     duration: 600,
     easing: 'ease-in-out',
     once: true,
+    offset: -100,
     disable: window.innerWidth < 992
   });
 })
