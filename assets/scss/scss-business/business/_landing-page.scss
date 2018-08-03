@@ -149,6 +149,8 @@
           .categorys {
             display: flex;
             margin-bottom: 30px;
+            margin-left: -35px;
+            // justify-content: space-between;
             a {
               opacity: 1;
               text-align: center;
@@ -229,7 +231,6 @@
         .head-right {
           .hover {
             .categorys {
-              margin-left: -20px;
               a {
                 padding: 18px 10px;
                 min-width: 120px;
@@ -271,7 +272,7 @@
               display: none;
             }
             .categorys {
-              margin-left: 0;
+              margin-left: -0px;
               margin-bottom: 16px;
               a {
                 padding: 15px 10px;
@@ -295,6 +296,19 @@
       }
     }
   }
+  @include breakpoint($bs-sm){
+    .head-landing-page {
+      .content-head-landing-page {
+        .head-right {
+          .hover {
+            .categorys {
+              margin-left: -30px;
+            }
+          }
+        }
+      }
+    }
+  }
   @include breakpoint($bs-xs){
     .head-landing-page {
       .content-head-landing-page {
@@ -305,6 +319,7 @@
           padding-left: 30px;
           .hover {
             .categorys {
+              margin-left: 0px;
               a {
                 min-width: 115px;
                 padding: 20px 10px;
@@ -312,6 +327,19 @@
                   width: 40px;
                 }
               }
+            }
+          }
+        }
+      }
+    }
+  }
+  @include breakpoint($bs-xxs){
+    .head-landing-page {
+      .content-head-landing-page {
+        .head-right {
+          .hover {
+            .categorys {
+              margin-left: -20px;
             }
           }
         }
@@ -339,12 +367,12 @@
           &:hover {
             .hover {
               .categorys {
-                margin-left: -20px;
+                margin-left: -10px;
                 a {
-                  min-width: 80px;
-                  padding: 15px 5px;
+                  min-width: auto;
+                  padding: 15px 10px;
                   img {
-                    width: 35px;
+                    width: 30px;
                   }
                   p {
                     font-size: 13px;
