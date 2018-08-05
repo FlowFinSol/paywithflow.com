@@ -364,6 +364,9 @@
         }
         .head-right {
           padding-left: 20px;
+          .hover {
+            position: relative;
+          }
           &:hover {
             .hover {
               .categorys {
