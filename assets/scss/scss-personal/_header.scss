@@ -51,6 +51,27 @@ nav {
           }
         }
       }
+      .nav-link[data-toggle].collapsed:after {
+        content: "▾";
+        padding-left: 15px;
+      }
+      .nav-link[data-toggle]:not(.collapsed):after {
+        content: "▴";
+        padding-left: 15px;
+      }
+      .nav-link {
+        display: none;
+      }
+      .business-type {
+        ul {
+          li {
+            a {
+              line-height: 32px;
+              margin: 7px 0;
+            }
+          }
+        }
+      }
       .dropdown {
         .show {
           display: none;
@@ -151,6 +172,12 @@ nav {
         .menu {
           padding: 10px 0;
           display: flex;
+          .dropdown {
+            display: none;
+          }
+          .nav-link {
+            display: block;
+          }
           a {
             font-weight: bold;
             padding: 10px 20px;
