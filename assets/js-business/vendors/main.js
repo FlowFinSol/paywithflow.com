@@ -1,3 +1,6 @@
+// show year
+$("#year").text((new Date).getFullYear());
+
 $("#openNav").click(function() {
   $('#log-in-out').hide();
   $("#mySidenav").css("width", "320px");
